@@ -1,0 +1,547 @@
+/*** uncss> filename: http://soron.dev/assets/css/xs.css ***/
+
+.xs-3 {
+  width: 25%;
+}
+
+.xs-4 {
+  width: 33.3333%;
+}
+
+.xs-12 {
+  width: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  font-size: 62.5%;
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+  overflow-y: scroll;
+}
+
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+p,
+footer,
+header,
+main,
+nav,
+section {
+  display: block;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0 0 1em;
+  padding: 0;
+}
+
+a {
+  background-color: transparent;
+}
+
+a:active,
+a:hover,
+a:focus {
+  outline: 0;
+}
+
+input {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+input {
+  line-height: normal;
+}
+
+input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+@-ms-viewport {
+  width: auto !important;
+}
+
+body {
+  position: relative;
+  font: 400 14px "Proxima Nova", Helvetica, Arial, sans-serif;
+  line-height: 1.618em;
+  text-align: center;
+  background: #fff;
+  color: #333;
+  will-change: scroll-position;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+address {
+  font-style: normal;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: " ";
+  height: 0;
+  font: 0/0 a;
+  overflow: hidden;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.container {
+  display: block;
+  max-width: 100%;
+  width: 900px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.inline,
+.inline-middle > .item {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+.inline-middle {
+  display: block;
+}
+
+.inline-middle > .item {
+  vertical-align: middle;
+}
+
+.inline-middle:before {
+  display: inline-block;
+  content: " ";
+  font: 0/0 a;
+  width: 0;
+  height: 100%;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.block {
+  position: relative;
+  text-align: center;
+}
+
+.block > .container {
+  padding: 36px 12px;
+  text-align: left;
+}
+
+.title {
+  padding: 12px 0 48px;
+  font-size: 2em;
+  font-weight: 300;
+  line-height: 1.618em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #d9c693;
+}
+
+.content {
+  margin: 0 24px;
+}
+
+.link {
+  display: inline-block;
+}
+
+.link,
+.link:hover,
+.link:focus,
+.link:active {
+  text-decoration: none;
+}
+
+.href {
+  position: absolute;
+  left: 0;
+  top: -149px;
+  height: 150px;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.list {
+  font-size: 0.875em;
+}
+
+.list-text {
+  padding-left: 36px;
+}
+
+.list-text > .item {
+  position: relative;
+  margin-bottom: 1em;
+}
+
+.list-text > .item:before {
+  display: inline-block;
+  position: absolute;
+  content: " ";
+  width: 6px;
+  height: 6px;
+  left: -24px;
+  top: .75em;
+  background: #000;
+  opacity: .34;
+}
+
+.hidden {
+  display: none !important;
+}
+
+#main {
+  position: relative;
+  transform: translateZ(0);
+  z-index: 1;
+}
+
+.t-target {
+  display: none;
+}
+
+.t-trigger {
+  margin-bottom: -24px;
+  padding: 0 24px;
+  line-height: 48px;
+  font-size: 0.875em;
+  text-transform: lowercase;
+  background: #fff;
+  border-bottom: 3px solid #0090ff;
+  color: #0090ff;
+  cursor: pointer;
+}
+
+.t-trigger .text {
+  display: none;
+}
+
+.t-trigger .show {
+  display: block;
+}
+
+#header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 150px;
+  padding-top: 40px;
+  background: #fff;
+  backface-visibility: hidden;
+  z-index: 2;
+}
+
+#header .container {
+  height: 100%;
+}
+
+#header .link {
+  color: #000;
+  opacity: .87;
+}
+
+#header .inline-middle {
+  height: 100%;
+}
+
+#logo {
+  float: left;
+  height: 100%;
+}
+
+#logo .name {
+  font-weight: 300;
+}
+
+#menu {
+  float: right;
+  height: 100%;
+}
+
+#menu .item + .item {
+  margin-left: 6px;
+}
+
+#menu .link {
+  position: relative;
+  padding: 12px;
+  opacity: .5;
+}
+
+#menu .link:hover {
+  opacity: .7;
+}
+
+#footer {
+  position: relative;
+  background: #abe647;
+  text-align: left;
+  font-size: 0.75em;
+  z-index: 1;
+}
+
+#footer .inline {
+  vertical-align: top;
+}
+
+#footer .title {
+  padding: 24px 0 12px;
+  text-align: left;
+  font-size: 1.143em;
+  font-weight: 700;
+  color: #fff;
+}
+
+#footer .decorated {
+  position: relative;
+  padding-bottom: 24px;
+}
+
+#footer .decorated:after {
+  display: block;
+  position: absolute;
+  content: " ";
+  left: 50%;
+  bottom: 0;
+  width: 96px;
+  height: 3px;
+  margin-left: -12px;
+  background: #fff;
+}
+
+#footer .col {
+  padding: 0 12px;
+}
+
+#footer .content {
+  margin-left: 24px;
+}
+
+#footer .company {
+  display: block;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+}
+
+#footer .opening .term .name {
+  width: 8em;
+}
+
+#footer .offset {
+  margin-left: 8%;
+}
+
+#footer .link {
+  color: #000;
+}
+
+#footer .time + .time:before {
+  content: " - ";
+}
+
+#footer .term {
+  margin: 0;
+}
+
+#footer .term .name,
+#footer .term .data {
+  display: block;
+  margin: 0;
+  float: left;
+}
+
+#footer .term .name {
+  clear: both;
+}
+
+#footer .term .name:after {
+  content: ":";
+}
+
+#footer .term .data {
+  margin-left: 6px;
+  opacity: .5;
+}
+
+#footer .bank .company {
+  font-weight: 400;
+  margin: 0;
+}
+
+#footer .docs .link {
+  display: block;
+  line-height: 3em;
+  text-align: center;
+  color: #0090ff;
+  border-bottom: 2px solid #0090ff;
+}
+
+.part-headline {
+  position: relative;
+  padding: 150px 240px 0 0;
+  height: 850px;
+  max-height: 100vh;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.part-headline .back {
+  position: absolute;
+  left: 0;
+  top: 150px;
+  right: 0;
+  bottom: 0;
+  background: url(/assets/img/soron-magyarorszag-alkusz.jpg) no-repeat scroll right 0;
+  background-size: auto 100%;
+  z-index: 1;
+}
+
+.part-headline .fade {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #abe647;
+  transform: skewX(-20deg);
+  transform-origin: right 0;
+  backface-visibility: hidden;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.part-headline .fade:after {
+  display: block;
+  position: absolute;
+  content: " ";
+  right: 0;
+  top: 0;
+  width: 0;
+  height: 75%;
+  padding-left: 50%;
+  background: #d9c693;
+  transform: skewX(40deg);
+  transform-origin: left 0;
+}
+
+.part-portfolio .t-target {
+  border-top: 1px solid rgba(0, 0, 0, 0.13);
+  margin-top: 24px;
+  padding-top: 24px;
+  font-size: 0.857em;
+  color: #8c8c8c;
+}
+
+.part-portfolio .t-state:checked ~ .container .t-target {
+  display: block;
+}
+
+.part-portfolio .t-state:checked ~ .t-trigger .show {
+  display: none;
+}
+
+.part-portfolio .t-state:checked ~ .t-trigger .hide {
+  display: block;
+}
+
+.part-illumination {
+  height: 250px;
+  background: url(/assets/img/soron-biztositas-kockazatelemzes.jpg) no-repeat scroll center 0 / cover;
+  backface-visibility: hidden;
+  z-index: -1;
+}
+
+.part-services {
+  background: #d9c693;
+}
+
+.part-services .title {
+  color: #fff;
+}
+
+.part-services .title-sub {
+  margin-bottom: 1em;
+  font-size: 0.875em;
+}
+
+.part-services .title-sub:after {
+  content: ":";
+}
+
+.part-services .inline {
+  vertical-align: top;
+}
+
+.part-services .t-state:checked ~ .container .t-target {
+  display: block;
+}
+
+.part-services .t-state:checked ~ .t-trigger .show {
+  display: none;
+}
+
+.part-services .t-state:checked ~ .t-trigger .hide {
+  display: block;
+}
+
+.part-partners {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAIAAABvrngfAAAAK0lEQVQImWN4/vzJf1TA+P//fwYk8OLFUwZkeYgOBjQ+QgjZRAY0/v///wGUrl3j68jsnwAAAABJRU5ErkJggg==) repeat scroll center 0;
+}
+
+.part-partners .text {
+  font-style: normal;
+}

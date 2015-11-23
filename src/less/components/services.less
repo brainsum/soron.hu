@@ -1,0 +1,62 @@
+@import (reference) "../lib/config";
+
+// ==================================
+// [PART] SERVICES
+// ==================================
+
+.xs() {
+    .part-services {
+        z-index: 2;
+
+        .bg {
+            background: @c-beige;
+        }
+        .title {
+            padding-bottom: 0;
+            color: #fff;
+        }
+        .title-sub {
+            font-size: round(14 / 16em, 3);
+            height: 3em;
+            margin: (@s-unit * 4) 0;
+            padding: 0 (@s-unit * 2);
+
+            &:after {
+                content: ":";
+            }
+        }
+        .inline {
+            vertical-align: top;
+        }
+
+        // Toggle content logic
+
+        .t-state:checked {
+            & ~ .container .t-target {
+                display: block;
+            }
+            & ~ .t-trigger {
+                .show {
+                    display: none;
+                }
+                .hide {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+.sm() {
+    .part-services {
+        .title-sub {
+            height: 5em;
+        }
+    }
+}
+.md() {
+    .part-services {
+        .title-sub {
+            height: 3em;
+        }
+    }
+}

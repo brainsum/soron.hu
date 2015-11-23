@@ -1,0 +1,67 @@
+// ==================================
+// [CONFIG] STACKS
+// ==================================
+
+.xs() {};
+.sm() {};
+.md() {};
+.lg() {};
+.fx() {};
+
+// ==================================
+// [CONFIG] SIZES
+// ==================================
+
+@s-unit:        12px;
+@s-font:        14px;
+@s-head:        110px;
+@s-head-gap:    40px;
+@s-line:        3px;
+
+// ==================================
+// [CONFIG] COLORS
+// ==================================
+
+@c-head:    #fff;
+@c-lite:    #f7fffd;
+@c-gray:    fade(#000, 13%);
+@c-blue:    #68C7A9;//#0090ff;
+@c-lime:    #DBED6F;//#abe647;
+@c-beige:   #D6D2AC;//#d9c693;
+
+// ==================================
+// [CONFIG] MEDIA BREAKPOINTS
+// ==================================
+
+@m-grids:   12;
+@m-sm:      480;
+@m-md:      768;
+@m-lg:      960;
+
+@m-sm-min:  unit((@m-sm + 1), px);
+@m-md-min:  unit((@m-md + 1), px);
+@m-lg-min:  unit((@m-lg + 1), px);
+@m-xs-max:  unit((@m-sm), px);
+@m-sm-max:  unit((@m-md), px);
+@m-md-max:  unit((@m-lg), px);
+
+@m-sm-wrap: unit((@m-sm - (@s-unit * 2)), px);
+@m-md-wrap: unit((@m-md - (@s-unit * 2)), px);
+@m-lg-wrap: unit((@m-lg - (@s-unit * 2)), px);
+
+
+// ==================================
+// [LOGIC] REUSABLE FRAGMENTS
+// ==================================
+
+.inline-placeholder(@segment: before) {
+    &:@{segment} {
+        display: inline-block;
+        content: " ";
+        font: 0/0 a;
+        width: 0;
+        height: 100%;
+        vertical-align: middle;
+        overflow: hidden;
+    }
+}

@@ -1,0 +1,180 @@
+/**
+ * [HELPER] BUILDER TOOLS
+ *
+ * @author ERU <stereotribe@hotmail.com>
+ * @package nano
+ */
+#nano {
+    .create {
+
+        // Generates a grid system with the given prefix
+
+        .GridSystem(@prefix, @grids, @i: 1) when (@i <= @grids) {
+            .@{prefix}-@{i} {
+                width: floor(100% / @grids * @i * 1000) / 1000;
+            }
+            #nano.create.GridSystem(@prefix, @grids, @i + 1);
+        }
+
+        // Generates a switch logic into the caller bracket
+
+        .Switch(@query: default, @rule, @step: @n-tab-items) when (@step > 0) {
+            & when (@query = default) {
+                .s-@{step}:checked ~ .s-proxy .s-@{step} {@rule();}
+            }
+            & when not (@query = default) {
+                .s-@{step}:checked ~ @{query} {@rule();}
+            }
+            #nano.create.Switch(@query, @rule, @step - 1);
+        }
+    }
+    .reset {
+
+        // Reset styles for browsers viewport
+
+        .Browser() {
+            *, *:before, *:after {
+                box-sizing: border-box;
+            }
+            html, body {
+                min-height: 100%;
+            }
+            html {
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                -webkit-text-size-adjust: 100%;
+                -ms-text-size-adjust: 100%;
+
+                font-size: 62.5%;
+                font-family: sans-serif;
+            }
+            body {
+                margin: 0;
+                overflow-y: scroll;
+            }
+            svg, img, ul, ol, li, h1, h2, h3, h4, h5, h6, textarea, p, article, aside, figcaption, figure, footer, header, main, nav, section {
+                display: block;
+            }
+            svg:not(:root) {
+                overflow: hidden;
+                pointer-events: none;
+            }
+            svg, img {
+                max-width: 100%;
+                height: auto;
+                border: 0;
+            }
+            ul, ol {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                margin: 0 0 1em;
+                padding: 0;
+            }
+            textarea {
+                width: 100% !important;
+                max-width: 100%;
+                min-height: 40px;
+                resize: vertical;
+            }
+            a {
+                background-color: transparent;
+
+                &:active, &:hover, &:focus {
+                    outline: 0;
+                }
+            }
+            small {
+                font-size: 80%;
+            }
+            button, input, optgroup, select, textarea {
+                color: inherit;
+                font: inherit;
+                margin: 0;
+            }
+            button {
+                overflow: visible;
+            }
+            button, select {
+                text-transform: none;
+            }
+            button, html input[type="button"], input[type="reset"], input[type="submit"] {
+                -webkit-appearance: button;
+                cursor: pointer;
+            }
+            button::-moz-focus-inner, input::-moz-focus-inner {
+                border: 0;
+                padding: 0;
+            }
+            input {
+                line-height: normal;
+
+                &[type="checkbox"], &[type="radio"] {
+                    box-sizing: border-box;
+                    padding: 0;
+                }
+                &[type="number"] {
+                    &::-webkit-inner-spin-button, &::-webkit-outer-spin-button {
+                        height: auto;
+                    }
+                }
+                &[type="search"] {
+                    -webkit-appearance: textfield;
+
+                    &::-webkit-search-cancel-button, &::-webkit-search-decoration {
+                        -webkit-appearance: none;
+                    }
+                }
+            }
+            table {
+                border-collapse: collapse;
+                border-spacing: 0;
+            }
+            td, th {
+                padding: 0;
+            }
+
+            // Windows Tablet hack
+
+            @-ms-viewport {
+                width: auto !important
+            }
+        }
+
+        // Reset styles for printed media
+
+        .Printer() {
+            *, *:before, *:after {
+                background: transparent !important;
+                color: #000 !important;
+                box-shadow: none !important;
+                text-shadow: none !important;
+            }
+            a, a:visited {
+                text-decoration: underline;
+            }
+            pre, blockquote {
+                border: 1px solid #999;
+                page-break-inside: avoid;
+            }
+            thead {
+                display: table-header-group;
+            }
+            tr, img {
+                page-break-inside: avoid;
+            }
+            img {
+                max-width: 100% !important;
+            }
+            p, h2, h3 {
+                orphans: 3;
+                widows: 3;
+            }
+            h2, h3 {
+                page-break-after: avoid;
+            }
+        }
+    }
+}

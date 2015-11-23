@@ -1,0 +1,176 @@
+@import (reference) "../lib/config";
+
+// ==================================
+// [LAYOUT] FOOTER
+// ==================================
+
+.xs() {
+    .part-footer {
+        position: relative;
+        text-align: left;
+        font-size: round(12 / 16em, 3);
+        z-index: 1;
+
+        .bg {
+            background: @c-lime;
+        }
+        .inline {
+            vertical-align: top;
+        }
+        .title {
+            padding: 0 0 (@s-unit * 2);
+            font-size: round(22 / 16em, 3);
+            font-weight: 500;
+            text-align: left;
+            color: #fff;
+
+            & ~ .title {
+                padding-top: @s-unit * 2;
+            }
+        }
+        .col {
+            padding: @s-unit;
+        }
+        .content {
+            margin: 0;
+        }
+        .company {
+            display: block;
+            text-transform: uppercase;
+            margin-bottom: 1em;
+        }
+        .link {
+            color: #000;
+        }
+        .time + .time:before {
+            content: " - ";
+        }
+        .term {
+            margin: 0;
+
+            .name, .data {
+                display: block;
+                margin: 0;
+                float: left;
+            }
+            .name {
+                clear: both;
+                &:after {
+                    content: ":";
+                }
+            }
+            .data {
+                padding-left: @s-unit;
+                opacity: .5;
+            }
+        }
+        .decorated {
+            position: relative;
+            padding-bottom: @s-unit * 2;
+
+            &:after {
+                display: block;
+                position: absolute;
+                content: " ";
+                left: 50%;
+                bottom: 0;
+                width: @s-unit * 8;
+                height: @s-line;
+                margin-left: @s-unit * -4;
+                background: #fff;
+            }
+        }
+        .account {
+            padding-bottom: @s-unit * 2;
+
+            .term {
+                .name, .data {
+                    float: none;
+                }
+                .data {
+                    display: block;
+                    padding: 0;
+                }
+            }
+        }
+        .opening .term {
+            .name {
+                font-weight: 500;
+                width: 40%;
+            }
+            .data {
+                width: 60%;
+            }
+        }
+
+        // Account informations
+
+        .bank {
+            display: block;
+            font-size: round(28 / 16em, 3);
+            font-weight: 300;
+            margin: 0;
+            padding: 0 0 (@s-unit * 4);
+        }
+
+        // Downloadable documents
+
+        .docs {
+            border-top: 1px dashed fade(#000, 20%);
+
+            .link {
+                display: block;
+                font-size: round(14 / 16em, 3);
+                font-weight: 500;
+                line-height: 5em;
+                text-align: center;
+                text-transform: uppercase;
+                background: #fff;
+                color: #000;
+                margin-top: @s-unit;
+            }
+        }
+    }
+    .page-info {
+        display: none;
+    }
+}
+.sm() {
+    .part-footer {
+        .bank {
+            padding-bottom: @s-unit * 2;
+        }
+    }
+}
+.md() {
+    .part-footer {
+        .account .col {
+            vertical-align: top;
+        }
+        .docs {
+            border-top: 0;
+
+            .link {
+                margin: 0 0 @s-unit;
+                line-height: 3.5em;
+                background: darken(@c-lime, 21%);
+                color: #fff;
+            }
+        }
+    }
+}
+.fx() {
+    .part-footer {
+        .docs .link {
+            opacity: .6;
+            transition: opacity .2s ease-out;
+
+            &:hover, &:focus {
+                opacity: .8;
+            }
+            &:active {
+                opacity: 1;
+            }
+        }
+    }
+}

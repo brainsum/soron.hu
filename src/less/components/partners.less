@@ -1,0 +1,60 @@
+@import (reference) "../lib/config";
+
+// ==================================
+// [PART] PARTNERS
+// ==================================
+
+.xs() {
+    .part-partners {
+        & > .wrapper > .container {
+            text-align: center;
+        }
+        .bg {
+            background: fade(#000, 2%);
+        }
+        .list {
+            font-size: round(12 / 16em, 3);
+            text-transform: uppercase;
+            opacity: .8;
+        }
+        .title, .text {
+            display: inline-block;
+            background: #fff;
+            font-style: normal;
+        }
+        .title {
+            padding: @s-unit;
+            margin: 0 auto (@s-unit * 4);
+            line-height: 1em;
+        }
+        .text {
+            padding: round(@s-unit * .5, 3);
+            line-height: 1.5em;
+        }
+    }
+}
+.fx() {
+    .part-partners {
+        .bg {
+            //background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAIAAABvrngfAAAAK0lEQVQImWN4/vzJf1TA+P//fwYk8OLFUwZkeYgOBjQ+QgjZRAY0/v///wGUrl3j68jsnwAAAABJRU5ErkJggg==) repeat scroll center 0;
+        }
+    }
+}
+.sm() {
+    .part-partners {
+        .list {
+            text-align: left;
+        }
+        .item {
+            padding: 0 @s-unit;
+            vertical-align: top;
+        }
+    }
+}
+.lg() {
+    .part-partners {
+        .title {
+            margin-bottom: @s-unit * 6;
+        }
+    }
+}

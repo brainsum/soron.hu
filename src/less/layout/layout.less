@@ -1,0 +1,210 @@
+@import (reference) "../lib/config";
+@import (reference) "../lib/nano";
+
+// ==================================
+// [LAYOUT] MAIN ATOMIC COMPONENTS
+// ==================================
+
+.xs() {
+    #nano.reset.Browser();
+
+    body {
+        position: relative;
+        font: 400 @s-font Helvetica,Arial,sans-serif;
+        line-height: 1.618em;
+        text-align: center;
+        background: @c-lite;
+        color: #333;
+        will-change: scroll-position;
+    }
+    h1, h2, h3, h4, h5, h6, strong, b {
+        margin: 0;
+        font-weight: 500;
+    }
+    address {
+        font-style: normal;
+    }
+    *:focus {
+        outline: 0;
+    }
+    .clearfix {
+        *zoom: 1;
+
+        &:before, &:after {
+            display: table;
+            content: " ";
+            height: 0;
+            font: 0/0 a;
+            overflow: hidden;
+        }
+        &:after {
+            clear: both;
+        }
+    }
+    .container {
+        display: block;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 0 (@s-unit * 2);
+    }
+    .inline {
+        display:  inline-block;
+        *display: inline;
+        *zoom: 1;
+    }
+    .inline-group {
+        display: block;
+
+        .inline-placeholder(before);
+
+        & > .item:extend(.inline) {
+            vertical-align: middle;
+        }
+    }
+    .inline-wrapper:extend(.inline-group all) {
+        white-space: nowrap;
+        overflow: hidden;
+
+        & > .item {
+            width: 100%;
+            white-space: normal;
+            vertical-align: top;
+        }
+    }
+    .block {
+        position: relative;
+        padding-top: @s-head - 1;
+        margin-top: -@s-head + 1;
+        text-align: center;
+        pointer-events: none;
+        z-index: 1;
+
+        & > .wrapper {
+            pointer-events: all;
+        }
+        & > .wrapper > .container {
+            padding-top: @s-unit * 2;
+            padding-bottom: @s-unit * 4;
+            text-align: left;
+        }
+    }
+    .title {
+        padding: (@s-unit * 2) 0 (@s-unit * 4);
+        font-size: 1.8em;
+        font-weight: 300;
+        line-height: 1.618em;
+        text-transform: uppercase;
+        text-align: center;
+        color: @c-beige;
+    }
+    .content {
+        margin: 0 (@s-unit * 2);
+    }
+    .bold {
+        font-weight: 500 !important;
+    }
+    .hidden {
+        display: none !important;
+    }
+    .link {
+        display: inline-block;
+
+        &, &:hover, &:focus, &:active {
+            text-decoration: none;
+        }
+    }
+    .list {
+        font-size: round(14 / 16em, 3);
+        opacity: .8;
+
+        &-text {
+            padding: 0 (@s-unit * 2);
+
+            & > .item {
+                position: relative;
+                margin-bottom: 1em;
+
+                &:before {
+                    display: inline-block;
+                    position: absolute;
+                    content: " ";
+                    width: @s-unit * .5;
+                    height: @s-unit * .5;
+                    left: @s-unit * -2;
+                    top: .75em;
+                    background: #000;
+                    opacity: .34;
+                }
+            }
+        }
+    }
+
+    // ==================================
+    // [LOGIC] TOGGLE
+    // ==================================
+
+    .t-target {
+        display: none;
+    }
+    .t-trigger {
+        margin-bottom: @s-unit * -2;
+        padding: 0 @s-unit * 2;
+        line-height: @s-unit * 4;
+        font-size: round(14 / 16em, 3);
+        text-transform: lowercase;
+        background: #fff;
+        border-bottom: 3px solid @c-blue;
+        color: @c-blue;
+        cursor: pointer;
+
+        .text {
+            display: none;
+        }
+        .show {
+            display: block;
+        }
+    }
+}
+.fx() {
+    .block {
+        backface-visibility: hidden;
+        transform: translateZ(0);
+    }
+
+    // Only CSS anchor origin activation (with fixed layout order)
+
+    ._setTargetLink() {}
+
+    .part-portfolio:target ~ #header .link-portfolio,
+    .part-services:target ~ #header .link-services,
+    .part-about:target ~ #header .link-about,
+    .part-partners:target ~ #header .link-partners,
+    .part-footer:target ~ #header .link-footer {
+        &:extend(#menu .link.active all);
+    }
+}
+.sm() {
+    .title {
+        font-size: 2.25em;
+    }
+    .container {
+        width: @m-sm-wrap;
+    }
+}
+.md() {
+    .container {
+        @l-gap: @s-unit * 4;
+
+        width: @m-md-wrap;
+        padding-left: @l-gap;
+        padding-right: @l-gap;
+    }
+}
+.lg() {
+    .title {
+        padding-bottom: @s-unit * 4;
+    }
+    .container {
+        width: @m-lg-wrap;
+    }
+}

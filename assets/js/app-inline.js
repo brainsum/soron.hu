@@ -1,0 +1,1 @@
+'use strict';(function(c,d){if(d){var a=d("#root,#load"),b=c.createElement("div");a[0].classList.add("js");b.innerHTML=a[1].childNodes[0].textContent;b=b.childNodes[0];a[1].parentNode.replaceChild(b,a[1])}})(document,document.querySelectorAll?function(c){return document.querySelectorAll(c)}:!1);

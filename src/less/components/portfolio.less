@@ -1,0 +1,36 @@
+@import (reference) "../lib/config";
+
+// ==================================
+// [PART] PORTFOLIO
+// ==================================
+
+.xs() {
+    .part-portfolio {
+        z-index: 2;
+
+        .t-target {
+            border-top: 1px solid @c-gray;
+            margin-top: @s-unit * 2;
+            padding-top: @s-unit * 2;
+            font-size: round(14 / 16em, 3);
+            font-weight: 300;
+            opacity: .8;
+        }
+
+        // Toggle content logic
+
+        .t-state:checked {
+            & ~ .container .t-target {
+                display: block;
+            }
+            & ~ .t-trigger {
+                .show {
+                    display: none;
+                }
+                .hide {
+                    display: block;
+                }
+            }
+        }
+    }
+}

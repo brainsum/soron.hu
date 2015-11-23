@@ -1,0 +1,73 @@
+#	PERFORMANCE AND SECURITY ISSUES
+#
+#	We define a few things to make the application safer
+#	as possible
+#
+#	@author 	Székely Ádám <aszekely@brainsum.com>
+#	@license	Creative Commons 3.0 (Unported)
+
+AddDefaultCharset UTF-8
+ServerSignature off
+
+#	ADVANCED FRONTEND INTEGRATION
+
+<IfModule mime_module.c>
+	AddType text/cache-manifest appcache
+
+	AddType application/font-woff2 woff2
+	AddType application/font-woff woff
+	AddType application/font-ttf ttf
+	AddType application/vnd.ms-fontobject eot
+	AddType image/svg+xml svg
+	AddType image/webp webp
+</IfModule>
+
+#	PHP ENGINE CONFIGURATIONS
+#
+#	These options are helps to the app to remain secure
+#	and consistent in different hosts
+
+<IfModule mod_php5.c>
+	php_value default_mimetype text/html
+	php_value precision 13
+	php_flag expose_php off
+	php_flag zlib.output_compression on
+	php_flag always_populate_raw_post_data off
+
+	# Sessions
+
+	php_flag session.auto_start off
+	php_flag session.use_cookies on
+	php_flag session.use_only_cookies on
+	php_flag session.use_trans_sid off
+	php_flag session.cookie_httponly on
+
+	php_value session.name "_sid"
+
+	# ASP tags is good for templating, but don't cross <?xml ?> declaration.
+
+	php_flag short_open_tag on
+
+	# Security
+
+	php_flag register_globals off
+	php_flag magic_quotes_gpc off
+</IfModule>
+
+#	CACHING RULES
+
+<IfModule mod_expires.c>
+	ExpiresActive On
+	ExpiresDefault "access plus 1 year"
+	ExpiresByType text/html "access plus 0 seconds"
+</IfModule>
+
+#	URL REWRITE RULES
+
+<IfModule mod_rewrite.c>
+	RewriteEngine on
+	RewriteBase /
+	RewriteCond %{REQUEST_METHOD} ^TRACE
+	RewriteRule .* - [F]
+	RewriteRule !\.(js|json|css|ico|gif|jp?g|png|svg|xml|xsl|pdf|doc?|xls?|ppt?|woff[2]?|ttf|eot|map|less)$ index.php [L,NC]
+</IfModule>

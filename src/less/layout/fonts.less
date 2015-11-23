@@ -1,0 +1,50 @@
+@import (reference) "../lib/config";
+
+// ==================================
+// [LAYOUT] CUSTOM FONTS
+// ==================================
+
+.fx() {
+
+    // Declarations
+
+    @font-face {
+        font-family: "Proxima Nova";
+        font-weight: 400;
+        font-style: normal;
+        src: url(/assets/fonts/proximanova-regular.eot);
+        src: url(/assets/fonts/proximanova-regular.eot?#iefix) format('embedded-opentype'),
+             url(/assets/fonts/proximanova-regular.woff2) format('woff2'),
+             url(/assets/fonts/proximanova-regular.woff) format('woff'),
+             url(/assets/fonts/proximanova-regular.ttf) format('truetype'),
+             url(/assets/fonts/proximanova-regular.svg#proxima_nova_regular) format('svg');
+    }
+    @font-face {
+        font-family: "Proxima Nova";
+        font-weight: 300;
+        font-style: normal;
+        src: url(/assets/fonts/proximanova-light.eot);
+        src: url(/assets/fonts/proximanova-light.eot?#iefix) format('embedded-opentype'),
+             url(/assets/fonts/proximanova-light.woff2) format('woff2'),
+             url(/assets/fonts/proximanova-light.woff) format('woff'),
+             url(/assets/fonts/proximanova-light.ttf) format('truetype'),
+             url(/assets/fonts/proximanova-light.svg#proxima_nova_light) format('svg');
+    }
+    @font-face {
+        font-family: "Proxima Nova";
+        font-weight: 500;
+        font-style: normal;
+        src: url(/assets/fonts/proximanova-semibold.eot);
+        src: url(/assets/fonts/proximanova-semibold.eot?#iefix) format('embedded-opentype'),
+             url(/assets/fonts/proximanova-semibold.woff2) format('woff2'),
+             url(/assets/fonts/proximanova-semibold.woff) format('woff'),
+             url(/assets/fonts/proximanova-semibold.ttf) format('truetype'),
+             url(/assets/fonts/proximanova-semibold.svg#proxima_nova_semibold) format('svg');
+    }
+
+    // Applying fontkit
+
+    body {
+        font-family: "Proxima Nova";
+    }
+}
