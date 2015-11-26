@@ -1,1 +1,235 @@
-#menu .link,.block{backface-visibility:hidden}#menu .item:after,#menu .link:after{position:absolute;display:block;content:" "}@font-face{font-family:"Proxima Nova";font-weight:400;font-style:normal;src:url(/assets/fonts/proximanova-regular.eot);src:url(/assets/fonts/proximanova-regular.eot?#iefix) format('embedded-opentype'),url(/assets/fonts/proximanova-regular.woff2) format('woff2'),url(/assets/fonts/proximanova-regular.woff) format('woff'),url(/assets/fonts/proximanova-regular.ttf) format('truetype'),url(/assets/fonts/proximanova-regular.svg#proxima_nova_regular) format('svg')}@font-face{font-family:"Proxima Nova";font-weight:300;font-style:normal;src:url(/assets/fonts/proximanova-light.eot);src:url(/assets/fonts/proximanova-light.eot?#iefix) format('embedded-opentype'),url(/assets/fonts/proximanova-light.woff2) format('woff2'),url(/assets/fonts/proximanova-light.woff) format('woff'),url(/assets/fonts/proximanova-light.ttf) format('truetype'),url(/assets/fonts/proximanova-light.svg#proxima_nova_light) format('svg')}@font-face{font-family:"Proxima Nova";font-weight:500;font-style:normal;src:url(/assets/fonts/proximanova-semibold.eot);src:url(/assets/fonts/proximanova-semibold.eot?#iefix) format('embedded-opentype'),url(/assets/fonts/proximanova-semibold.woff2) format('woff2'),url(/assets/fonts/proximanova-semibold.woff) format('woff'),url(/assets/fonts/proximanova-semibold.ttf) format('truetype'),url(/assets/fonts/proximanova-semibold.svg#proxima_nova_semibold) format('svg')}body{font-family:"Proxima Nova"}.block{transform:translateZ(0)}#menu .item:after{left:50%;bottom:130px;height:20px;width:1px;background:#D6D2AC;transform:skewX(-30deg)}#menu .link{transform:translateZ(0);transition:opacity .2s ease-out}#menu .link:after{left:0;bottom:0;right:0;height:2px;background:#000;transform:rotateY(90deg);transition:.2s ease-out;opacity:.08}.part-about:target~#header .link-about,.part-footer:target~#header .link-footer,.part-partners:target~#header .link-partners,.part-portfolio:target~#header .link-portfolio,.part-services:target~#header .link-services{opacity:1}.part-about:target~#header .link-about:after,.part-footer:target~#header .link-footer:after,.part-partners:target~#header .link-partners:after,.part-portfolio:target~#header .link-portfolio:after,.part-services:target~#header .link-services:after{background:#68C7A9;opacity:1}#menu .link:hover:after,.part-about:target~#header .link-about:after,.part-footer:target~#header .link-footer:after,.part-partners:target~#header .link-partners:after,.part-portfolio:target~#header .link-portfolio:after,.part-services:target~#header .link-services:after{transform:rotateY(0)}.part-footer .docs .link{opacity:.6;transition:opacity .2s ease-out}.part-footer .docs .link:focus,.part-footer .docs .link:hover{opacity:.8}.part-footer .docs .link:active{opacity:1}.part-illumination{background-image:url(/assets/img/soron-biztositas-kockazatelemzes.jpg)}@media print,screen and (min-width:481px){.sm-6{width:50%}.title{font-size:2.25em}.container{width:456px}.part-footer .bank{padding-bottom:24px}.part-services .title-sub{height:5em}.part-partners .list{text-align:left}.part-partners .item{padding:0 12px;vertical-align:top}}@media print,screen and (min-width:769px){.md-4{width:33.333%}.md-12{width:100%}.container{width:744px;padding-left:48px;padding-right:48px}#logo{float:left}#logo .type{display:none}#menu{display:block;float:right;height:100%}#menu .item{position:relative;height:100%}#menu .item:before{display:inline-block;content:" ";font:0/0 a;width:0;height:100%;vertical-align:middle;overflow:hidden}#menu .item+.item{margin-left:6px}#menu .link{position:relative;padding:12px 6px;opacity:.5}#menu .link:hover{opacity:.7}.part-footer .account .col{vertical-align:top}.part-footer .docs{border-top:0}.part-footer .docs .link{margin:0 0 12px;line-height:3.5em;background:#bbd61b;color:#fff}.part-services .title-sub{height:3em}}@media print,screen and (min-width:961px){.title{padding-bottom:48px}.container{width:936px}#menu .link{padding:12px}.part-partners .title{margin-bottom:72px}}
+#menu .link,.block {
+	backface-visibility:hidden
+}
+#menu .item:after,#menu .link:after {
+	position:absolute;display:block;content:" "
+}
+@font-face {
+	font-family:"Proxima Nova";font-weight:400;font-style:normal;src:url(/assets/fonts/proximanova-regular.eot);src:url(/assets/fonts/proximanova-regular.eot?#iefix) format('embedded-opentype'),url(/assets/fonts/proximanova-regular.woff2) format('woff2'),url(/assets/fonts/proximanova-regular.woff) format('woff'),url(/assets/fonts/proximanova-regular.ttf) format('truetype'),url(/assets/fonts/proximanova-regular.svg#proxima_nova_regular) format('svg')
+}
+@font-face {
+	font-family:"Proxima Nova";font-weight:300;font-style:normal;src:url(/assets/fonts/proximanova-light.eot);src:url(/assets/fonts/proximanova-light.eot?#iefix) format('embedded-opentype'),url(/assets/fonts/proximanova-light.woff2) format('woff2'),url(/assets/fonts/proximanova-light.woff) format('woff'),url(/assets/fonts/proximanova-light.ttf) format('truetype'),url(/assets/fonts/proximanova-light.svg#proxima_nova_light) format('svg')
+}
+@font-face {
+	font-family:"Proxima Nova";font-weight:500;font-style:normal;src:url(/assets/fonts/proximanova-semibold.eot);src:url(/assets/fonts/proximanova-semibold.eot?#iefix) format('embedded-opentype'),url(/assets/fonts/proximanova-semibold.woff2) format('woff2'),url(/assets/fonts/proximanova-semibold.woff) format('woff'),url(/assets/fonts/proximanova-semibold.ttf) format('truetype'),url(/assets/fonts/proximanova-semibold.svg#proxima_nova_semibold) format('svg')
+}
+
+@font-face {
+	font-family:"Proxima Nova";
+	font-weight:900;
+	font-style:normal;
+	src:url(/assets/fonts/proximanova-black.otf) format('opentype');
+}
+
+body {
+	font-family:"Proxima Nova"
+}
+.block {
+	transform:translateZ(0)
+}
+#menu .item:after {
+	left:50%;bottom:130px;height:20px;width:1px;background:#D6D2AC;transform:skewX(-30deg)
+}
+#menu .link {
+	transform:translateZ(0);transition:opacity .2s ease-out
+}
+#menu .link:after {
+	left:0;bottom:0;right:0;height:2px;background:#000;transform:rotateY(90deg);transition:.2s ease-out;opacity:.08
+}
+.part-about:target~#header .link-about,.part-footer:target~#header .link-footer,.part-partners:target~#header .link-partners,.part-portfolio:target~#header .link-portfolio,.part-services:target~#header .link-services {
+	opacity:1
+}
+.part-about:target~#header .link-about:after,.part-footer:target~#header .link-footer:after,.part-partners:target~#header .link-partners:after,.part-portfolio:target~#header .link-portfolio:after,.part-services:target~#header .link-services:after {
+	background:#68C7A9;opacity:1
+}
+#menu .link:hover:after,.part-about:target~#header .link-about:after,.part-footer:target~#header .link-footer:after,.part-partners:target~#header .link-partners:after,.part-portfolio:target~#header .link-portfolio:after,.part-services:target~#header .link-services:after {
+	transform:rotateY(0)
+}
+.part-footer .docs .link {
+	opacity:.6;
+	transition:opacity .2s ease-out
+}
+.part-footer .docs .link:focus,.part-footer .docs .link:hover {
+	opacity:.8
+}
+.part-footer .docs .link:active {
+	opacity:1
+}
+.part-illumination {
+	background-image:url(/assets/img/soron-biztositas-kockazatelemzes.jpg)
+}
+@media print,screen and (min-width:481px) {
+	.sm-6 {
+		width:50%
+	}
+	.title {
+		font-size:2em
+	}
+	.container {
+		width:456px
+	}
+	.part-footer .bank {
+		padding-bottom:24px
+	}
+	.part-services .title-sub {
+		height:5em
+	}
+	.part-partners .list {
+		text-align:left
+	}
+	.part-partners .item {
+		padding:0 12px;vertical-align:top
+	}
+
+}
+@media print,screen and (min-width:769px) {
+	.md-3 {
+		width:25%;
+	}
+	.md-4 {
+		width:33.333%
+	}
+	.md-12 {
+		width:100%
+	}
+	.container {
+		width:744px;padding-left:48px;padding-right:48px
+	}
+	#logo {
+		float:left
+	}
+	#logo .type {
+		display:none
+	}
+	#menu {
+		display:block;float:left;height:100%;
+		margin-left: 300px;
+
+	}
+	#menu .item {
+		position:relative;height:100%
+	}
+	#menu .item:before {
+		display:inline-block;content:" ";font:0/0 a;width:0;height:100%;vertical-align:middle;overflow:hidden
+	}
+	#menu .item+.item {
+		margin-left:6px
+	}
+	#menu .link {
+		position:relative;padding:12px 6px;
+	}
+	#menu .link:hover {
+		/*opacity:.7*/
+	}
+	.part-footer .account .col {
+		vertical-align:top
+	}
+	.part-footer .docs {
+		border-top:0
+	}
+	.part-footer .docs .link {
+		margin:0 0 12px;line-height:3.5em;background:#bbd61b;color:#fff
+	}
+	.part-services .title-sub {
+		height:3em
+	}
+
+}
+@media print,screen and (min-width:961px) {
+	.title {
+		padding-bottom:48px
+	}
+	.container {
+		width:1160px
+	}
+	#menu .link {
+		padding:12px
+	}
+	.part-partners .title {
+		margin-bottom:72px
+	}
+}
+
+
+
+
+section.part-headline#home {
+	/*szürke: #bcc6d2*/
+	/*background: #bcc6d2;*/
+	background: -webkit-linear-gradient(left, #abe647 50%, #bcc6d2 50%);
+	background: -o-linear-gradient(left, #abe647 50%, #bcc6d2 50%);
+	background: -moz-linear-gradient(left, #abe647 50%, #bcc6d2 50%);
+	background: linear-gradient(left, #abe647 50%, #bcc6d2 50%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ace647', endColorstr='#bcc6d2', GradientType=1 );
+	position: relative;
+	max-height: 700px;
+	height: 700px;
+}
+
+#sub-home {
+	position: absolute;
+	width: 100%;
+	height: 700px;
+	background: url("/assets/img/soron-magyarorszag-alkusz.jpg") top center no-repeat;
+	font-family: arial;
+}
+
+#home-text {
+	display: inline-block;
+	width: 1000px;
+	padding: 100px 0;
+}
+
+.inline-block {
+	display: inline-block;
+}
+
+.right {
+	text-align: right;
+}
+
+.left {
+	text-align: left;
+}
+
+.center {
+	text-align: center;
+}
+
+.white {
+	color: white;
+}
+
+.capital div {
+	text-transform: uppercase;
+	font-size: 20px;
+}
+
+#headline-title-1 {
+	font-size: 23px;
+	margin-top: 100px;
+	font-family: 'Proxima Nova';
+	color: #744c18;
+}
+
+#headline-title-2 {
+	margin-top: 50px;
+}
+
+#headline-title-2 #the-title {
+	font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif;
+}
+
+#headline-title-3 {
+	margin-top: 70px;
+	font-size: 13px;
+	font-family: 'Proxima Nova';
+}
+
+.bold {
+	font-weight: 900;
+}
+
+#partnereink {
+	background: url('/assets/img/partner-bg.png');
+}

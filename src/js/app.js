@@ -75,6 +75,7 @@
      * [BRAINSUM] SMOOTH-SCROLL
      * ==================================
      */
+     /*
     var SCROLL_MOVE_PAGE = 140;
     var SCROLL_MOVE_TIME = 500;
 
@@ -107,7 +108,7 @@
         }
         next(loop);
     };
-
+    */
     /**
      * Event listener for mouse scroll
      * @param e

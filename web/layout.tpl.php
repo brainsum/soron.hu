@@ -299,6 +299,7 @@
 
     <!-- [LAYOUT.CONTENT] HEADLINE -->
 
+    <!--
     <section class="block part-headline" id="home" tabindex="<?=$page->getTabIndex()?>">
         <div class="back" property="primaryImageOfPage" typeof="ImageObject"><meta property="url" content="<?=Http::getHost()."{$meta->lead}"?>"/></div>
         <div class="fade"></div>
@@ -309,6 +310,49 @@
             </h2>
             <strong class="lead">Hosszú távon</strong>
             <em class="shape">Szakértelmünk és tapasztalatunk alapján a piac teljes kínálatának áttekintése után választjuk ki az ügyfél számára legmegfelelőbb konstrukciót</em>
+        </div>
+    </section> 
+    -->
+    <!--
+    <section class="block part-headline" id="home" tabindex="<?=$page->getTabIndex()?>">
+        <div class="background">
+            <div class="text">
+                 <h6 class="title">
+                    <span>Felelősség-, teljes telephelyi- és gépjármű flottára szóló </span>
+                    <span class="lead">biztosítások</span>
+                </h6>
+                <div><strong class="lead">Hosszú távon</strong></div>
+                <em class="shape">Szakértelmünk és tapasztalatunk alapján a piac teljes kínálatának áttekintése után választjuk ki az ügyfél számára legmegfelelőbb konstrukciót</em>
+            </div>
+        </div>
+    </section>
+    -->
+
+    <section class="part-headline" id="home" tabindex="<?=$page->getTabIndex()?>">
+        <div id="sub-home">
+            <div id="home-text" class="left">
+                <div id="headline-title-1" class="left">
+                    <span>Felelősség- teljes telephelyi-, gépjármű flottára szóló </span>
+                    <span class="white bold">biztosítások</span>
+                </div>
+                <div id="headline-title-2" class="capital white">
+                    <div class="md-3 inline-block center">...</div>
+                    <div class="md-3 inline-block left" id="the-title">Hosszú távon</div>
+                    <div class="md-3 inline-block left">.......</div>
+                </div>
+                <div>
+                    <div class="md-3 inline-block"></div>
+                    <div class="md-4 inline-block left" id="headline-title-3">
+                        Szakértelmünk és<br />
+                        tapasztalaunk alapján a plac<br />
+                        teljes kínálatának áttekintése<br/>
+                        után választjuk ki az ügyfél<br />
+                        számára legmegfelelőbb<br />
+                        konstrukciót
+                    </div>
+                    <div class="md-3 inline-block"></div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -529,8 +573,8 @@
                 <!-- [LAYOUT.FOOTER] DOWNLOADABLE CONTENT -->
 
                 <div class="inline col xs-12 md-4 docs">
-                    <a href="/#" class="link" tabindex="<?=$page->getTabIndex()?>">Fogyasztói panasz bejelentő</a>
-                    <a href="/#" class="link" tabindex="<?=$page->getTabIndex()?>">Panaszkezelési információk</a>
+                    <a href="/assets/other_files/fogyasztoi_panaszbejelento.pdf" class="link" tabindex="<?=$page->getTabIndex()?>">Fogyasztói panaszbejelentő</a>
+                    <a href="/assets/other_files/panaszkezelesi_szabalyzat_soron.pdf" class="link" tabindex="<?=$page->getTabIndex()?>">Panaszkezelési információk</a>
                 </div>
             </div>
         </div>
@@ -546,11 +590,8 @@
             <!-- [LAYOUT.HEADER] LOGO -->
 
             <a id="logo" class="inline-group link" href="/#home">
-                <?php
-                    $logoName = explode(' ', $org->getName());
-                    $logoName = array_shift($logoName);
-                ?><h1 class="inline site" about="mainEntity">
-                    <strong class="name" property="name"><?=$logoName?></strong>
+                <h1 class="inline site" about="mainEntity">
+                    <strong class="name" property="name">Soron</strong>
                     <small class="type"><?=$org->getText('typo')?></small>
                 </h1>
             </a>
