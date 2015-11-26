@@ -278,15 +278,6 @@ address {
 	margin-bottom: 30px;
 }
 
-
-.button-holder {
-	width: 100%;
-	text-align: left;
-	padding-left: 307px;
-	padding-top: -40px;
-
-}
-
 .t-trigger {
 	margin-bottom:-24px;	
 	line-height:48px;	
@@ -301,6 +292,11 @@ address {
 	margin-bottom: 75px;
 	border-bottom-width: 2px;
 	font-weight: bold;
+
+
+	float: left;
+	margin-left: 307px;
+	margin-top: 30px;
 }
 
 #services-title {
@@ -370,15 +366,15 @@ address {
 }
 
 .part-footer .bg {
-	background:#DBED6F
+	background:#A9EA38
 }
 
 .part-footer .title {
 	padding:0 0 24px;	
-	font-size:1.375em;	
-	font-weight:500;	
+	font-size:20px;	
+	font-weight:900;	
 	text-align:left;	
-	color:#fff
+	color:#fff;
 }
 
 .part-footer .title~.title {
@@ -390,7 +386,7 @@ address {
 }
 
 .part-footer .content {
-	margin:0
+	margin-left:40px;
 }
 
 .part-footer .company {
@@ -509,6 +505,10 @@ address {
 
 .part-portfolio,.part-services {
 	z-index:2
+}
+
+.part-portfolio {
+	padding-bottom: 200px;
 }
 
 .part-headline .fade {

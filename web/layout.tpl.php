@@ -380,12 +380,12 @@
                 </div>
             </div>
 
-            <div class="button-holder">
+            <!--<div class="button-holder">-->
                 <label for="x-p" class="link t-trigger" id="first-button" aria-hidden="true" tabindex="<?=$page->getTabIndex()?>">
                     <span class="text show">Bővebben</span>
                     <span class="text hide">Bezár</span>
                 </label>
-            </div>
+            <!--</div>-->
         </div>
     </section>
 
@@ -486,7 +486,7 @@
                 <!-- [LAYOUT.FOOTER] CONTACT -->
 
                 <div class="inline xs-12 md-4">
-                    <h4 class="inline col title xs-12 sm-6 md-12">Kapcsolat</h4>
+                    <h4 class="inline col title xs-12 sm-6 md-12 footer-h4">Kapcsolat</h4>
 
                     <div class="inline col content xs-12 sm-6 md-12">
                         <strong class="company" property="legalName"><?=$org->getName(true)?></strong>
@@ -506,21 +506,21 @@
                 <!-- [LAYOUT.FOOTER] ADDRESS -->
 
                 <div class="inline col xs-12 sm-6 md-4">
-                    <h4 class="title">Cégünk székhelye</h4>
+                    <h4 class="title footer-h4">Cégünk székhelye</h4>
 
                     <address class="content" property="address" typeof="PostalAddress">
                         <meta property="addressCountry" content="Hungary"/>
-                        <span property="postalCode">1142</span>
-                        <span property="addressLocality">Budapest</span>
+                        <span property="postalCode">1142 </span>
+                        <span property="addressLocality">Budapest </span>
                         <span property="streetAddress">Sárrét park 5/A.</span>
                     </address>
 
-                    <h4 class="title">Irodánk címe</h4>
+                    <h4 class="title footer-h4">Irodánk címe</h4>
 
                     <address class="content" property="location" typeof="PostalAddress">
                         <meta property="addressCountry" content="Hungary"/>
-                        <span property="postalCode">1093</span>
-                        <span property="addressLocality">Budapest</span>
+                        <span property="postalCode">1093 </span>
+                        <span property="addressLocality">Budapest </span>
                         <span property="streetAddress">Lónyay u. 36.</span>
                     </address>
 
@@ -529,7 +529,7 @@
                 <!-- [LAYOUT.FOOTER] OPENING-HOURS -->
 
                 <div class="inline col xs-12 sm-6 md-4 opening">
-                    <h4 class="title">Nyitvatartás</h4>
+                    <h4 class="title footer-h4">Nyitvatartás</h4>
 
                     <dl class="term clearfix">
                         <dt class="item name">Hétfő</dt>

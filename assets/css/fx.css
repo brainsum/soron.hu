@@ -46,11 +46,11 @@ body {
 	transform:rotateY(0)
 }
 .part-footer .docs .link {
-	opacity:.6;
+	/*opacity:.6;*/
 	transition:opacity .2s ease-out
 }
 .part-footer .docs .link:focus,.part-footer .docs .link:hover {
-	opacity:.8
+	/*opacity:.8*/
 }
 .part-footer .docs .link:active {
 	opacity:1
@@ -130,7 +130,14 @@ body {
 		border-top:0
 	}
 	.part-footer .docs .link {
-		margin:0 0 12px;line-height:3.5em;background:#bbd61b;color:#fff
+		margin:0 0 12px;
+		margin-left: 30px;
+		line-height:3.5em;
+		background:transparent;
+		color:#0090FF;
+		border-bottom: 2px solid #0090FF;
+		font-size: 12px;
+		width: 55%;
 	}
 	.part-services .title-sub {
 		height:3em
