@@ -400,17 +400,17 @@
             <input class="hidden t-state" id="x-s" type="checkbox" aria-hidden="true"/>
 
             <div class="container">
-                <h2 class="title">Szolgáltatásunk</h2>
+                <h2 class="title" id="services-title">Szolgáltatásunk</h2>
 
                 <div class="inline xs-12 sm-6">
                     <h4 class="title-sub">Ügyfeleink az alábbi szolgáltatásokat kapják</h4>
 
-                    <ul class="list list-text">
+                    <ul class="list list-text service-list">
                         <li class="item">biztosítási szolgáltatások</li>
                         <li class="item">kockázatfelmérés és kockázatelemzés</li>
                         <li class="item">a kockázatok csökkentésére, ill. kiküszöbölésére vonatkozó módszerek kidolgozása</li>
                     </ul>
-                    <ul class="list list-text t-target">
+                    <ul class="list list-text t-target service-list">
                         <li class="item">az elkerülhetetlen kockázatok áthárítására biztosítási program kialakítása</li>
                         <li class="item">a biztosítási programban megfogalmazott kockázatokra vonatkozó biztosítási fedezet megszervezése a biztosítók versenyeztetésével</li>
                         <li class="item">a biztosítók ajánlatainak elemzése a biztosított részére, a biztosító által nyújtott szolgáltatások és feltételrendszerek, valamint a biztosítási díj figyelembevételével</li>
@@ -420,12 +420,12 @@
                 <div class="inline xs-12 sm-6">
                     <h4 class="title-sub">A partneri kapcsolat fennállása alatt az alábbi szolgáltatásokat kínáljuk</h4>
 
-                    <ul class="list list-text">
+                    <ul class="list list-text service-list">
                         <li class="item">a felmerülő új biztosítási igények szakszerű megfogalmazása</li>
                         <li class="item">Partnerünk meglévő biztosítási szerződéseinek kezelése, felülvizsgálata és az esetlegesen szükséges módosításokra vonatkozó javaslatok kidolgozása</li>
                         <li class="item">káresemény alkalmával szakszerű felvilágosítás nyújtása a követendő eljárásról</li>
                     </ul>
-                    <ul class="list list-text t-target">
+                    <ul class="list list-text t-target service-list">
                         <li class="item">kárrendezés során közreműködünk abban, hogy Partnerünk törvényes érdeke maradéktalanul érvényesüljön tájékoztatás a biztosítási piacon felmerülő új lehetőségekről</li>
                         <li class="item">egyéni igények alapján testre szabott szolgáltatás nyújtása</li>
                     </ul>
@@ -444,9 +444,9 @@
     <section class="block part-about" id="miert-a-soron" tabindex="<?=$page->getTabIndex()?>">
         <div class="wrapper bg">
             <div class="container">
-                <h3 class="title">Miért a Soron Magyarország Alkusz?</h3>
+                <h3 class="title" id="why-soron-title">Miért a Soron Magyarország Alkusz?</h3>
 
-                <ul class="list list-text">
+                <ul class="list list-text" id="why-soron-list">
                     <li class="item">Mert munkatársaink egytől egyig többéves biztosítónál szerzett értékesítési tapasztalattal rendelkeznek.</li>
                     <li class="item">Mert a Soron Magyarország Alkusz adminisztratív, informatikai, továbbá 15 éves szaktanácsadói hátterével garantálja ügyfeleinek a magas színvonalú kiszolgálását.</li>
                     <li class="item">Mert a többéves biztosítási szakmában eltöltött idõ alatt kiépült kapcsolati rendszerünk megalapozta a gyorsabb, rugalmasabb és eredményesebb ügyintézést minden területen (értékesítési, kárrendezési, informatikai, pénzügyi, szerződéskezelési).</li>
@@ -461,9 +461,9 @@
     <section class="block part-partners" id="partnereink" tabindex="<?=$page->getTabIndex()?>">
         <div class="wrapper bg">
             <div class="container">
-                <h3 class="title title-big">Partnereink</h3>
+                <h3 class="title title-big" id="partners-title">Partnereink</h3>
 
-                <ul class="list">
+                <ul class="list" id="partners-list">
                     <?php foreach ($partners as $partnerName) : ?>
                         <li class="inline item xs-12 sm-6 md-4"><em class="text"><?=htmlspecialchars($partnerName)?></em></li>
                     <?php endforeach ?>

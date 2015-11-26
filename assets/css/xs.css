@@ -57,7 +57,7 @@ footer,h1,h2,h3,h4,header,li,nav,p,section,ul {
 }
 
 ul {
-	list-style:none
+	list-style:none;
 }
 
 a {
@@ -226,19 +226,24 @@ address {
 }
 
 .list-text>.item {
-	margin-bottom:1em
+	margin-bottom:30px;
+	font-size: 13px;
 }
 
 .list-text>.item:before {
 	display:inline-block;	
 	position:absolute;	
 	content:" ";	
-	width:6px;	
-	height:6px;	
-	left:-24px;	
+	width:3px;	
+	height:3px;	
+	left:-13px;	
 	top:.75em;	
-	background:#000;	
-	opacity:.34
+	background:#000;
+	border-radius: 50%;
+}
+
+#why-soron-list>.item:before {
+	margin-top: 5px;
 }
 
 .t-target,.t-trigger .text {
@@ -248,6 +253,31 @@ address {
 #header .container,#logo {
 	height:60%
 }
+
+.service-list {
+	margin-left: 13px;
+}
+
+#why-soron-title {
+	color: #96E300;
+	font-size: 47px;
+	font-weight: 200;
+	padding-top: 100px;
+}
+
+#why-soron-list li{
+	font-size: 15px;
+	line-height: 250%;
+	margin: 0;
+}
+
+#partners-title {
+	color: #CFB882;
+	padding-top: 70px;
+	font-size: 30px;
+	margin-bottom: 30px;
+}
+
 
 .button-holder {
 	width: 100%;
@@ -271,6 +301,12 @@ address {
 	margin-bottom: 75px;
 	border-bottom-width: 2px;
 	font-weight: bold;
+}
+
+#services-title {
+	font-size: 45px;
+	font-weight: 200;
+	padding-top: 60px;
 }
 
 #logo .name,#logo .type,.t-trigger .show {
@@ -528,7 +564,7 @@ address {
 }
 
 .part-services .bg {
-	background:#D6D2AC
+	background:#DAC693;
 }
 
 .part-services .title {
@@ -537,9 +573,10 @@ address {
 }
 
 .part-services .title-sub {
-	font-size:.875em;	
+	/*font-size:.875em;	*/
+	font-size: 14px;
 	height:3em;	
-	margin:48px 0;	
+	margin-top: 48px;	
 	padding:0 24px
 }
 
@@ -560,7 +597,7 @@ address {
 }
 
 .part-partners .bg {
-	background:rgba(0,0,0,.02)
+	/*background:rgba(0,0,0,.02)*/
 }
 
 .part-partners .list {
@@ -580,7 +617,8 @@ address {
 }
 
 .part-partners .text {
-	padding:6px;	
-	line-height:1.5em
+	padding:0px;	
+	line-height:150%;
+	font-size: 15px;
 }
 
