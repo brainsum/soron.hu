@@ -102,8 +102,10 @@ body {
 		display:none
 	}
 	#menu {
-		display:block;float:left;height:100%;
-		margin-left: 300px;
+		display:block;
+		float:left;
+		height:100%;
+		margin-left: 320px;
 
 	}
 	#menu .item {
@@ -143,7 +145,8 @@ body {
 		width:1160px
 	}
 	#menu .link {
-		padding:12px
+		padding:9px;
+		letter-spacing: 0.5px;
 	}
 	.part-partners .title {
 		margin-bottom:72px
@@ -206,24 +209,38 @@ section.part-headline#home {
 }
 
 #headline-title-1 {
-	font-size: 23px;
-	margin-top: 100px;
+	font-size: 23.45px;
+	margin-top: 77px;
 	font-family: 'Proxima Nova';
+	font-weight: 300;
 	color: #744c18;
 }
 
 #headline-title-2 {
-	margin-top: 50px;
+	margin-top: 37px;
+	letter-spacing: 0.5px;
+}
+
+.left-points {
+	width: 136px;
+	margin-left: 178px;
+	letter-spacing: 2px;
 }
 
 #headline-title-2 #the-title {
-	font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif;
+	font-family: 'Proxima Nova';
+	font-weight: 900;
+	/*font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif;*/
+	width: 208px;
+
 }
 
 #headline-title-3 {
 	margin-top: 70px;
 	font-size: 13px;
 	font-family: 'Proxima Nova';
+	font-weight: 500;
+	line-height: 180%;
 }
 
 .bold {

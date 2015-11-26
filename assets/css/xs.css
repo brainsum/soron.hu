@@ -92,17 +92,20 @@ input[type=checkbox] {
 	width:auto!important
 }
 
+
 body {
 	overflow-y:scroll;	
 	font:400 14px Helvetica,Arial,sans-serif;	
 	line-height:1.618em;	
-	background:#f7fffd;	
+	/*background:#f7fffd;	*/
+	background: white;
 	color:#333;	
 	will-change:scroll-position
 }
 
 h1,h2,h3,h4,strong {
 	margin:0;	
+	margin-top: -8px;
 	font-weight:500
 }
 
@@ -158,7 +161,21 @@ address {
 }
 
 #header,.title {
-	text-align:center
+	text-align:center;
+}
+
+#about-us-title {
+	text-align: left;
+	text-transform: none;
+	font-weight: 300;
+	font-size: 35px;
+	margin-top: 35px;
+}
+
+.about-us-content {
+	line-height: 300%;
+	padding-left: 20px;
+	padding-right: 30px;
 }
 
 .title {
@@ -167,7 +184,7 @@ address {
 	font-weight:900;	
 	line-height:1.618em;
 	text-transform: uppercase;
-	color:#D6D2AC
+	color:#CDB4A9;
 }
 
 .list-text,.t-trigger {
@@ -175,7 +192,7 @@ address {
 }
 
 #header .list,.list,.t-trigger {
-	font-size: 15px;
+	font-size: 14.5px;
 	font-weight: 400;
 }
 
@@ -196,7 +213,7 @@ address {
 }
 
 .list {
-	opacity:.8
+	/*opacity:.8*/
 }
 
 .list-text>.item {
@@ -220,7 +237,7 @@ address {
 }
 
 #header .container,#logo {
-	height:100%
+	height:60%
 }
 
 .t-trigger {
@@ -242,8 +259,8 @@ address {
 	left:0;	
 	top:-40px;	
 	right:0;	
-	height:140px;	
-	padding-top:70px;	
+	height:138px;	
+	padding-top:84px;	
 	background:#fff;	
 	overflow:hidden;	
 	z-index:2
@@ -259,7 +276,7 @@ address {
 }
 
 #logo {
-	opacity:.6
+	/*opacity:.6*/
 }
 
 .part-footer .inline,.part-services .inline {

@@ -336,15 +336,15 @@
                     <span class="white bold">biztosítások</span>
                 </div>
                 <div id="headline-title-2" class="capital white">
-                    <div class="md-3 inline-block center">...</div>
+                    <div class="md-3 inline-block center left-points">...</div>
                     <div class="md-3 inline-block left" id="the-title">Hosszú távon</div>
                     <div class="md-3 inline-block left">.......</div>
                 </div>
                 <div>
-                    <div class="md-3 inline-block"></div>
+                    <div class="md-3 inline-block left-points"></div>
                     <div class="md-4 inline-block left" id="headline-title-3">
                         Szakértelmünk és<br />
-                        tapasztalaunk alapján a plac<br />
+                        tapasztalatunk alapján a plac<br />
                         teljes kínálatának áttekintése<br/>
                         után választjuk ki az ügyfél<br />
                         számára legmegfelelőbb<br />
@@ -363,13 +363,13 @@
             <input class="hidden t-state" id="x-p" type="checkbox" aria-hidden="true"/>
 
             <div class="container">
-                <h3 class="title">Rólunk</h3>
+                <h3 class="title" id="about-us-title">Rólunk</h3>
 
-                <div class="content">
+                <div class="content about-us-content">
                     <p>Cégünk a Soron Magyarország Alkusz 2003. február 21.-én kapta meg az engedélyt a Pénzügyi Szervezetek Állami Felügyeletétől, biztosítási alkuszi tevékenység folytatására.</p>
                     <p>A társaság alapítói 1997 óta foglalkoznak biztosítási tanácsadással. A társaság megalapításának a célja, egy olyan független, professzionális tanácsadócég létrehozása volt, amely a nemzetközi elvárásoknak megfelelő biztosítási tanácsadói szolgáltatásokat nyújt, elsősorban cégeknek.</p>
                 </div>
-                <div class="content t-target">
+                <div class="content t-target about-us-content">
                     <p>Társaságunk többéves biztosításszakmai gyakorlattal rendelkező tulajdonosokból és munkatársakból áll, amely biztosítéka az ügyfeleket mind teljesebben kiszolgálni tudó munkánknak.</p>
                     <p>Partneri kapcsolatainkat a bizalomra építjük, legfontosabb mércénk ügyfeleink hosszú távú elégedettsége. Alapvető értékeink közé tartozik a megbízhatóság, szakértelem, előrelátás és gondoskodás. Nagy hangsúlyt helyezünk a folyamatos képzésre, hogy ügyfeleink számára valóban értékes szakmai segítséget nyújthassunk.</p>
                     <p><strong>Fő tevékenységi körünk a vállalkozásoknak nyújtott szakmai-, és tevékenységükhöz kapcsolódó felelősségbiztosítások, teljes telephelyi-, gépjármű flottára szóló biztosítások. Egyedülálló megoldásokkal rendelkezünk vagyonkezelő, és társasházkezelők részére.</strong></p>
