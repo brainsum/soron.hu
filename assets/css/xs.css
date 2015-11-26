@@ -99,7 +99,6 @@ body {
 	line-height:1.618em;	
 	/*background:#f7fffd;	*/
 	background: white;
-	color:#333;	
 	will-change:scroll-position
 }
 
@@ -175,7 +174,17 @@ address {
 .about-us-content {
 	line-height: 300%;
 	padding-left: 20px;
-	padding-right: 30px;
+	font-size: 15px;
+}
+
+#about-us-footer {
+	margin-top: 80px;
+}
+
+#about-us-footer p{
+	line-height: 200%;
+	font-size: 14px;
+	margin-top: 20px;
 }
 
 .title {
@@ -240,14 +249,28 @@ address {
 	height:60%
 }
 
+.button-holder {
+	width: 100%;
+	text-align: left;
+	padding-left: 307px;
+	padding-top: -40px;
+
+}
+
 .t-trigger {
 	margin-bottom:-24px;	
 	line-height:48px;	
 	text-transform:lowercase;	
 	background:#fff;	
-	border-bottom:3px solid #68C7A9;	
-	color:#68C7A9;	
+	border-bottom:3px solid #0090FF;	
+	color:#0090FF;	
 	cursor:pointer
+}
+
+#first-button {
+	margin-bottom: 75px;
+	border-bottom-width: 2px;
+	font-weight: bold;
 }
 
 #logo .name,#logo .type,.t-trigger .show {
@@ -481,9 +504,8 @@ address {
 	border-top:1px solid rgba(0,0,0,.13);	
 	margin-top:24px;	
 	padding-top:24px;	
-	font-size:.875em;	
-	font-weight:300;	
-	opacity:.8
+	font-size:15px;	
+	font-weight:300;
 }
 
 .part-portfolio .t-state:checked~.container .t-target {
