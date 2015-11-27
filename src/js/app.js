@@ -1,4 +1,28 @@
-(function (window, document, undefined) {
+/**
+*  resizes the menu on the top if the user starts scrolling
+*/
+window.onscroll = function(e) {
+    var scrollTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
+    /*
+    height: 138px;
+    padding-top: 84px;
+    */
+    var basicHeight = 138;
+    var basicPaddingTop = 84;
+    var menu = document.getElementById('header');
+    if (scrollTop > basicHeight) {                // if it is over basicPaddingTop
+        /*menu.style.height = basicHeight - 20;
+        menu.style.paddingTop = basicPaddingTop - 20;*/
+        menu.className = 'scroll-header';
+    } else {
+        /*menu.style.height = basicHeight;
+        menu.style.paddingTop = basicPaddingTop;*/
+        menu.className = '';
+    }
+        console.log(menu.className);
+}
+
+/*(function (window, document, undefined) {
     "use strict";
 
     var root = document.documentElement || document.body;
@@ -16,6 +40,7 @@
      * [BRAINSUM] TRANSITIONS
      * ==================================
      */
+     /*
     var Fx = {
         linear: function (t) {
             return t
@@ -113,6 +138,7 @@
      * Event listener for mouse scroll
      * @param e
      */
+     /*
     var roll = function (e) {
         e.preventDefault();
 
@@ -283,5 +309,6 @@
     //        });
     //    }, false);
     //}
-
+/*
 })(window, document, void 0);
+*/

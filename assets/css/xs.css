@@ -318,7 +318,7 @@ address {
 	padding-top:84px;	
 	background:#fff;	
 	overflow:hidden;	
-	z-index:2
+	z-index:3
 }
 
 #header .link {
@@ -361,7 +361,7 @@ address {
 .part-footer {
 	position:relative;	
 	text-align:left;	
-	font-size:.75em;	
+	font-size: 13px;	
 	z-index:1
 }
 
@@ -404,7 +404,7 @@ address {
 
 .part-footer .term .data,.part-footer .term .name {
 	display:block;	
-	margin:0;	
+	margin:0;
 	float:left
 }
 
@@ -412,9 +412,15 @@ address {
 	content:":"
 }
 
+.basic-name {
+	width:15%;
+}
+.basic-data {
+	width:85%;
+}
+
 .part-footer .term .data {
-	padding-left:12px;	
-	opacity:.5
+	padding-left:12px;
 }
 
 .part-footer .decorated {
@@ -439,7 +445,8 @@ address {
 }
 
 .part-footer .account .term .data,.part-footer .account .term .name {
-	float:none
+	float:left;
+	margin-bottom: 10px;
 }
 
 .part-footer .account .term .data {
@@ -447,9 +454,9 @@ address {
 	padding:0
 }
 
-.part-footer .opening .term .name {
-	font-weight:500;	
-	width:40%
+.part-footer .opening .term .name {	
+	width:40%;
+	padding-left: 35px;
 }
 
 .part-footer .opening .term .data {
@@ -458,10 +465,10 @@ address {
 
 .part-footer .bank {
 	display:block;	
-	font-size:1.75em;	
+	font-size:13px;	
 	font-weight:300;	
 	margin:0;	
-	padding:0 0 48px
+	/*padding:0 0 48px*/
 }
 
 .part-footer .docs {
@@ -622,3 +629,15 @@ address {
 	font-size: 15px;
 }
 
+#footer-whole-container {
+	padding-top: 75px;
+}
+
+#company-name {
+	font-weight: normal;
+	margin-bottom: 5px;
+}
+
+dt {
+	margin-bottom: 50px;	
+}

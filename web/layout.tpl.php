@@ -358,7 +358,8 @@
 
     <!-- [LAYOUT.CONTENT] PORTFOLIO -->
 
-    <section class="block part-portfolio" id="rolunk" tabindex="<?=$page->getTabIndex()?>">
+    <section class="block part-portfolio" tabindex="<?=$page->getTabIndex()?>">
+        <a class="anchor" id="rolunk"></a>
         <div class="wrapper bg">
             <input class="hidden t-state" id="x-p" type="checkbox" aria-hidden="true"/>
 
@@ -395,7 +396,8 @@
 
     <!-- [LAYOUT.CONTENT] SERVICES -->
 
-    <section class="block part-services" id="szolgaltatasunk" tabindex="<?=$page->getTabIndex()?>">
+    <section class="block part-services" id="" tabindex="<?=$page->getTabIndex()?>">
+        <a class="anchor" id="szolgaltatasunk"></a>
         <div class="wrapper bg">
             <input class="hidden t-state" id="x-s" type="checkbox" aria-hidden="true"/>
 
@@ -441,7 +443,8 @@
 
     <!-- [LAYOUT.CONTENT] WHY US -->
 
-    <section class="block part-about" id="miert-a-soron" tabindex="<?=$page->getTabIndex()?>">
+    <section class="block part-about" tabindex="<?=$page->getTabIndex()?>">
+    <a class="anchor" id="miert-a-soron"></a>
         <div class="wrapper bg">
             <div class="container">
                 <h3 class="title" id="why-soron-title">Miért a Soron Magyarország Alkusz?</h3>
@@ -458,7 +461,8 @@
 
     <!-- [LAYOUT.CONTENT] PARTNERS -->
 
-    <section class="block part-partners" id="partnereink" tabindex="<?=$page->getTabIndex()?>">
+    <section class="block part-partners" id="our-partners" tabindex="<?=$page->getTabIndex()?>">
+    <a class="anchor" id="partnereink"></a>
         <div class="wrapper bg">
             <div class="container">
                 <h3 class="title title-big" id="partners-title">Partnereink</h3>
@@ -476,12 +480,13 @@
     <!-- [LAYOUT] FOOTER -->
     <!-- ================================== -->
 
-    <footer id="kapcsolat" class="block part-footer" property="mainEntity" typeof="InsuranceAgency" tabindex="<?=$page->getTabIndex()?>">
+    <footer class="block part-footer" property="mainEntity" typeof="InsuranceAgency" tabindex="<?=$page->getTabIndex()?>">
+        <a class="anchor" id="kapcsolat"></a>
         <div class="wrapper bg">
             <?php
                 $about = "#{$org->getSlug()}";
             ?>
-            <div class="container decorated">
+            <div class="container decorated" id="footer-whole-container">
 
                 <!-- [LAYOUT.FOOTER] CONTACT -->
 
@@ -489,14 +494,14 @@
                     <h4 class="inline col title xs-12 sm-6 md-12 footer-h4">Kapcsolat</h4>
 
                     <div class="inline col content xs-12 sm-6 md-12">
-                        <strong class="company" property="legalName"><?=$org->getName(true)?></strong>
+                        <strong class="company" property="legalName" id="company-name"><?=$org->getName(true)?></strong>
                         <dl class="term clearfix">
-                            <dt class="name">Telefon</dt>
-                            <dd class="data" property="telephone">+36 (1) 220-9393</dd>
-                            <dt class="name">Fax</dt>
-                            <dd class="data" property="faxNumber">+36 (1) 220-3400</dd>
-                            <dt class="name">E-mail</dt>
-                            <dd class="data">
+                            <dt class="name basic-name">Telefon</dt>
+                            <dd class="data basic-data" property="telephone">+36 (1) 220-9393</dd>
+                            <dt class="name basic-name">Fax</dt>
+                            <dd class="data basic-data" property="faxNumber">+36 (1) 220-3400</dd>
+                            <dt class="name basic-name">E-mail</dt>
+                            <dd class="data basic-data">
                                 <a class="link" href="mailto:info@soron.hu" property="email" content="info@soron.hu">info@soron.hu</a>
                             </dd>
                         </dl>
@@ -576,8 +581,8 @@
                 <!-- [LAYOUT.FOOTER] DOWNLOADABLE CONTENT -->
 
                 <div class="inline col xs-12 md-4 docs">
-                    <a href="/assets/other_files/fogyasztoi_panaszbejelento.pdf" class="link" tabindex="<?=$page->getTabIndex()?>">Fogyasztói panaszbejelentő</a>
-                    <a href="/assets/other_files/panaszkezelesi_szabalyzat_soron.pdf" class="link" tabindex="<?=$page->getTabIndex()?>">Panaszkezelési információk</a>
+                    <a target="_blank" href="/assets/other_files/fogyasztoi_panaszbejelento.pdf" class="link" tabindex="<?=$page->getTabIndex()?>">Fogyasztói panaszbejelentő</a>
+                    <a target="_blank" href="/assets/other_files/panaszkezelesi_szabalyzat_soron.pdf" class="link" tabindex="<?=$page->getTabIndex()?>">Panaszkezelési információk</a>
                 </div>
             </div>
         </div>
@@ -588,6 +593,7 @@
     <!-- ================================== -->
 
     <header id="header">
+        <div id="green-line-left"> </div>
         <div class="container clearfix">
 
             <!-- [LAYOUT.HEADER] LOGO -->
@@ -620,6 +626,7 @@
                     </li>
                 </ul>
             </nav>
+
         </div>
     </header>
 
@@ -651,6 +658,10 @@
         <?php foreach ($access['hazard'] as $option) echo '<meta property="accessibilityHazard" content="'.$option.'"/>' ?>
         <?php foreach ($access['control'] as $option) echo '<meta property="accessibilityControl" content="full'.$option.'Control"/>' ?>
     </div>
+
+    <div id="blue-line"> </div>
+    <div id="blue-line-right"> </div>
+    <div id="green-line-right"> </div>
 
     <!-- [SCRIPTS] -->
 
