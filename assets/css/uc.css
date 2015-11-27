@@ -275,7 +275,7 @@ address {
   display: block;
 }
 
-#header {
+.header {
   position: fixed;
   left: 0;
   top: 0;
@@ -287,16 +287,16 @@ address {
   z-index: 2;
 }
 
-#header .container {
+.header .container {
   height: 100%;
 }
 
-#header .link {
+.header .link {
   color: #000;
   opacity: .87;
 }
 
-#header .inline-middle {
+.header .inline-middle {
   height: 100%;
 }
 

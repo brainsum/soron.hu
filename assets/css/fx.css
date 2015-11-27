@@ -22,7 +22,9 @@
 }
 
 body {
-	font-family:"Proxima Nova"
+	font-family:"Proxima Nova";
+	overflow-x: hidden;
+	overflow-y: scroll;
 }
 .block {
 	transform:translateZ(0)
@@ -36,13 +38,13 @@ body {
 #menu .link:after {
 	left:0;bottom:0;right:0;height:2px;background:#000;transform:rotateY(90deg);transition:.2s ease-out;opacity:.08
 }
-.part-about:target~#header .link-about,.part-footer:target~#header .link-footer,.part-partners:target~#header .link-partners,.part-portfolio:target~#header .link-portfolio,.part-services:target~#header .link-services {
+.part-about:target~.header .link-about,.part-footer:target~.header .link-footer,.part-partners:target~.header .link-partners,.part-portfolio:target~.header .link-portfolio,.part-services:target~.header .link-services {
 	opacity:1
 }
-.part-about:target~#header .link-about:after,.part-footer:target~#header .link-footer:after,.part-partners:target~#header .link-partners:after,.part-portfolio:target~#header .link-portfolio:after,.part-services:target~#header .link-services:after {
+.part-about:target~.header .link-about:after,.part-footer:target~.header .link-footer:after,.part-partners:target~.header .link-partners:after,.part-portfolio:target~.header .link-portfolio:after,.part-services:target~.header .link-services:after {
 	background:#68C7A9;opacity:1
 }
-#menu .link:hover:after,.part-about:target~#header .link-about:after,.part-footer:target~#header .link-footer:after,.part-partners:target~#header .link-partners:after,.part-portfolio:target~#header .link-portfolio:after,.part-services:target~#header .link-services:after {
+#menu .link:hover:after,.part-about:target~.header .link-about:after,.part-footer:target~.header .link-footer:after,.part-partners:target~.header .link-partners:after,.part-portfolio:target~.header .link-portfolio:after,.part-services:target~.header .link-services:after {
 	transform:rotateY(0)
 }
 .part-footer .docs .link {
@@ -328,7 +330,15 @@ a.anchor {
     transform: rotate(30deg);
 }
 
-#scroll-header {
-	height: 158px;
-	padding-top: 104px;
+.scroll-header {
+	position:fixed;
+	left:0;
+	top:-40px;
+	right:0;
+	height:108px;
+	padding-top:54px;
+	background:#fff;
+	overflow:hidden;
+	transition:.2s ease-out;
+	z-index:3;
 }

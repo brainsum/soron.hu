@@ -10,16 +10,13 @@ window.onscroll = function(e) {
     var basicHeight = 138;
     var basicPaddingTop = 84;
     var menu = document.getElementById('header');
-    if (scrollTop > basicHeight) {                // if it is over basicPaddingTop
-        /*menu.style.height = basicHeight - 20;
-        menu.style.paddingTop = basicPaddingTop - 20;*/
-        menu.className = 'scroll-header';
-    } else {
-        /*menu.style.height = basicHeight;
-        menu.style.paddingTop = basicPaddingTop;*/
-        menu.className = '';
+
+    if (scrollTop >= 100) {
+        menu.className = menu.className + ' scroll-header';
     }
-        console.log(menu.className);
+    else {
+        menu.className = 'header';
+    }
 }
 
 /*(function (window, document, undefined) {

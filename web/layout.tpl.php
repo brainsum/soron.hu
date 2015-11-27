@@ -592,7 +592,10 @@
     <!-- [LAYOUT] HEADER -->
     <!-- ================================== -->
 
-    <header id="header">
+    <!-- header id is only for js, don't add more class names, because js changes it back to 'header'
+        on scroll down the class name will change to scroll-header
+     -->
+    <header id="header" class="header">
         <div id="green-line-left"> </div>
         <div class="container clearfix">
 
@@ -659,7 +662,7 @@
         <?php foreach ($access['control'] as $option) echo '<meta property="accessibilityControl" content="full'.$option.'Control"/>' ?>
     </div>
 
-    <div id="blue-line"> </div>
+    <div id="blue-line" class="xs-12"> </div>
     <div id="blue-line-right"> </div>
     <div id="green-line-right"> </div>
 

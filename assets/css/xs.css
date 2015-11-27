@@ -23,7 +23,7 @@ body,input,ul {
 	clear:both
 }
 
-#header,.part-headline .fade,.part-illumination {
+.header,.part-headline .fade,.part-illumination {
 	backface-visibility:hidden
 }
 
@@ -159,7 +159,7 @@ address {
 	text-align:left
 }
 
-#header,.title {
+.header,.title {
 	text-align:center;
 }
 
@@ -200,7 +200,7 @@ address {
 	padding:0 24px
 }
 
-#header .list,.list,.t-trigger {
+.header .list,.list,.t-trigger {
 	font-size: 14.5px;
 	font-weight: 400;
 }
@@ -250,7 +250,7 @@ address {
 	display:none
 }
 
-#header .container,#logo {
+.header .container,#logo {
 	height:60%
 }
 
@@ -309,7 +309,7 @@ address {
 	display:block
 }
 
-#header {
+.header {
 	position:fixed;	
 	left:0;	
 	top:-40px;	
@@ -317,16 +317,17 @@ address {
 	height:138px;	
 	padding-top:84px;	
 	background:#fff;	
-	overflow:hidden;	
+	overflow:hidden;
+	transition:.05s ease-out;
 	z-index:3
 }
 
-#header .link {
+.header .link {
 	padding:12px 6px;	
 	color:#000;
 }
 
-#header .list {
+.header .list {
 	height:100%
 }
 
