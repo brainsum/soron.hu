@@ -60,6 +60,45 @@ body {
 .part-illumination {
 	background-image:url(/assets/img/soron-biztositas-kockazatelemzes.jpg)
 }
+
+
+@media print,screen and (max-width:480px) {
+	.line {
+		display: none;
+	}
+	section.part-headline#home {
+		background: #abe647;
+	}
+	#home-text {
+		width: 100%;
+		text-align: left;
+	}
+	.basic-name {
+		width:100%;
+	}
+	#headline-title-1 {
+		text-align: center;
+		line-height: 150%;
+	}
+	#headline-2-3-container {
+		width: 100%;
+		text-align: center;
+	}
+	.md-3 {
+		width:25%;
+	}
+	.first-row-list {
+		margin-top: 40px;
+	}
+	.points.inline-block{
+		display: none;
+	}
+	.about-us-content {
+		line-height: 165%;
+		padding-left: 0px;
+	}
+}
+
 @media print,screen and (min-width:481px) {
 	.sm-6 {
 		width:50%
@@ -108,6 +147,9 @@ body {
 	}
 	.first-row-list {
 		margin-top: 40px;
+	}
+	.services-title {
+		font-size: 45px;
 	}
 }
 @media print,screen and (min-width:769px) {

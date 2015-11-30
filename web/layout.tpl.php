@@ -308,12 +308,12 @@
                 </div>
                 <div id="headline-2-3-container">
                     <div id="headline-title-2" class="capital white">
-                        <div class="md-3 inline-block center left-points">...</div>
+                        <div class="md-3 inline-block center left-points points">...</div>
                         <div class="md-3 inline-block left" id="the-title">Hosszú távon</div>
-                        <div class="md-3 inline-block left">.......</div>
+                        <div class="md-3 inline-block left points">.......</div>
                     </div>
                     <div id="headline-3-container">
-                        <div class="md-3 inline-block left-points"></div>
+                        <div class="md-3 inline-block left-points points"></div>
                         <div class="md-4 inline-block left" id="headline-title-3">
                             Szakértelmünk és<br />
                             tapasztalatunk alapján a plac<br />
@@ -322,7 +322,7 @@
                             számára legmegfelelőbb<br />
                             konstrukciót
                         </div>
-                        <div class="md-3 inline-block"></div>
+                        <div class="md-3 inline-block points"></div>
                     </div>
                 </div>
             </div>
