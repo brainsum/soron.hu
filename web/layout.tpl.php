@@ -299,58 +299,31 @@
 
     <!-- [LAYOUT.CONTENT] HEADLINE -->
 
-    <!--
-    <section class="block part-headline" id="home" tabindex="<?=$page->getTabIndex()?>">
-        <div class="back" property="primaryImageOfPage" typeof="ImageObject"><meta property="url" content="<?=Http::getHost()."{$meta->lead}"?>"/></div>
-        <div class="fade"></div>
-        <div class="text">
-            <h2 class="title">
-                <span>Felelősség-, teljes telephelyi- és gépjármű flottára szóló</span>
-                <span class="lead">biztosítások</span>
-            </h2>
-            <strong class="lead">Hosszú távon</strong>
-            <em class="shape">Szakértelmünk és tapasztalatunk alapján a piac teljes kínálatának áttekintése után választjuk ki az ügyfél számára legmegfelelőbb konstrukciót</em>
-        </div>
-    </section> 
-    -->
-    <!--
-    <section class="block part-headline" id="home" tabindex="<?=$page->getTabIndex()?>">
-        <div class="background">
-            <div class="text">
-                 <h6 class="title">
-                    <span>Felelősség-, teljes telephelyi- és gépjármű flottára szóló </span>
-                    <span class="lead">biztosítások</span>
-                </h6>
-                <div><strong class="lead">Hosszú távon</strong></div>
-                <em class="shape">Szakértelmünk és tapasztalatunk alapján a piac teljes kínálatának áttekintése után választjuk ki az ügyfél számára legmegfelelőbb konstrukciót</em>
-            </div>
-        </div>
-    </section>
-    -->
-
     <section class="part-headline" id="home" tabindex="<?=$page->getTabIndex()?>">
         <div id="sub-home">
             <div id="home-text" class="left">
-                <div id="headline-title-1" class="left">
+                <div id="headline-title-1">
                     <span>Felelősség- teljes telephelyi-, gépjármű flottára szóló </span>
                     <span class="white bold">biztosítások</span>
                 </div>
-                <div id="headline-title-2" class="capital white">
-                    <div class="md-3 inline-block center left-points">...</div>
-                    <div class="md-3 inline-block left" id="the-title">Hosszú távon</div>
-                    <div class="md-3 inline-block left">.......</div>
-                </div>
-                <div>
-                    <div class="md-3 inline-block left-points"></div>
-                    <div class="md-4 inline-block left" id="headline-title-3">
-                        Szakértelmünk és<br />
-                        tapasztalatunk alapján a plac<br />
-                        teljes kínálatának áttekintése<br/>
-                        után választjuk ki az ügyfél<br />
-                        számára legmegfelelőbb<br />
-                        konstrukciót
+                <div id="headline-2-3-container">
+                    <div id="headline-title-2" class="capital white">
+                        <div class="md-3 inline-block center left-points">...</div>
+                        <div class="md-3 inline-block left" id="the-title">Hosszú távon</div>
+                        <div class="md-3 inline-block left">.......</div>
                     </div>
-                    <div class="md-3 inline-block"></div>
+                    <div id="headline-3-container">
+                        <div class="md-3 inline-block left-points"></div>
+                        <div class="md-4 inline-block left" id="headline-title-3">
+                            Szakértelmünk és<br />
+                            tapasztalatunk alapján a plac<br />
+                            teljes kínálatának áttekintése<br/>
+                            után választjuk ki az ügyfél<br />
+                            számára legmegfelelőbb<br />
+                            konstrukciót
+                        </div>
+                        <div class="md-3 inline-block"></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -382,7 +355,7 @@
             </div>
 
             <!--<div class="button-holder">-->
-                <label for="x-p" class="link t-trigger" id="first-button" aria-hidden="true" tabindex="<?=$page->getTabIndex()?>">
+                <label for="x-p" class="link t-trigger" id="first-button2" aria-hidden="true" tabindex="<?=$page->getTabIndex()?>">
                     <span class="text show">Bővebben</span>
                     <span class="text hide">Bezár</span>
                 </label>
@@ -407,7 +380,7 @@
                 <div class="inline xs-12 sm-6">
                     <h4 class="title-sub">Ügyfeleink az alábbi szolgáltatásokat kapják</h4>
 
-                    <ul class="list list-text service-list">
+                    <ul class="list list-text service-list first-row-list">
                         <li class="item">biztosítási szolgáltatások</li>
                         <li class="item">kockázatfelmérés és kockázatelemzés</li>
                         <li class="item">a kockázatok csökkentésére, ill. kiküszöbölésére vonatkozó módszerek kidolgozása</li>
@@ -422,7 +395,7 @@
                 <div class="inline xs-12 sm-6">
                     <h4 class="title-sub">A partneri kapcsolat fennállása alatt az alábbi szolgáltatásokat kínáljuk</h4>
 
-                    <ul class="list list-text service-list">
+                    <ul class="list list-text service-list first-row-list">
                         <li class="item">a felmerülő új biztosítási igények szakszerű megfogalmazása</li>
                         <li class="item">Partnerünk meglévő biztosítási szerződéseinek kezelése, felülvizsgálata és az esetlegesen szükséges módosításokra vonatkozó javaslatok kidolgozása</li>
                         <li class="item">káresemény alkalmával szakszerű felvilágosítás nyújtása a követendő eljárásról</li>
@@ -569,7 +542,7 @@
                 <!-- [LAYOUT.FOOTER] ACCOUNT -->
 
                 <div class="inline col xs-12 sm-6 md-4">
-                    <strong class="bank">Budapest Bank</strong>
+                    <div class="bank">Budapest Bank</div>
                     <dl class="term clearfix">
                         <dt class="name">Főszámla</dt>
                         <dd class="data">10100840-57517600-01000008</dd>
@@ -597,14 +570,13 @@
      -->
     <header id="header" class="header">
         <div id="green-line-left"> </div>
-        <div class="container clearfix">
-
+        <div id="yellow-line-right"> </div>
+        <div class="container clearfix relative">
             <!-- [LAYOUT.HEADER] LOGO -->
 
             <a id="logo" class="inline-group link" href="/#home">
                 <h1 class="inline site" about="mainEntity">
                     <strong class="name" property="name">Soron</strong>
-                    <small class="type"><?=$org->getText('typo')?></small>
                 </h1>
             </a>
 
@@ -662,9 +634,9 @@
         <?php foreach ($access['control'] as $option) echo '<meta property="accessibilityControl" content="full'.$option.'Control"/>' ?>
     </div>
 
-    <div id="blue-line" class="xs-12"> </div>
-    <div id="blue-line-right"> </div>
-    <div id="green-line-right"> </div>
+    <div id="blue-line" class="line"> </div>
+    <div id="blue-line-right" class="line"> </div>
+    <div id="green-line-right" class="line"> </div>
 
     <!-- [SCRIPTS] -->
 

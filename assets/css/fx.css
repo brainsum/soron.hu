@@ -82,7 +82,33 @@ body {
 	.part-partners .item {
 		padding:0 12px;vertical-align:top
 	}
-
+	.line {
+		display: none;
+	}
+	section.part-headline#home {
+		background: #abe647;
+	}
+	#home-text {
+		width: 100%;
+		text-align: left;
+	}
+	.basic-name {
+		width:100%;
+	}
+	#headline-title-1 {
+		text-align: center;
+		line-height: 150%;
+	}
+	#headline-2-3-container {
+		width: 100%;
+		text-align: center;
+	}
+	.md-3 {
+		width:25%;
+	}
+	.first-row-list {
+		margin-top: 40px;
+	}
 }
 @media print,screen and (min-width:769px) {
 	.md-3 {
@@ -144,7 +170,35 @@ body {
 	.part-services .title-sub {
 		height:3em
 	}
-
+	#sub-home {
+		background: url("/assets/img/soron-magyarorszag-alkusz.jpg") top center no-repeat;
+	}
+	section.part-headline#home {
+		background: -webkit-linear-gradient(left, #abe647 50%, #bcc6d2 50%);
+		background: -o-linear-gradient(left, #abe647 50%, #bcc6d2 50%);
+		background: -moz-linear-gradient(left, #abe647 50%, #bcc6d2 50%);
+		background: linear-gradient(left, #abe647 50%, #bcc6d2 50%);
+	}
+	.left-points {
+		margin-left: 178px;
+	}
+	#home-text {
+		width: 1000px;
+		text-align: left;
+	}
+	.basic-name {
+		width:15%;
+	}
+	#headline-title-1 {
+		text-align: left;
+		line-height: normal;
+	}
+	#headline-2-3-container {
+		text-align: left;
+	}
+	.first-row-list {
+		margin-top: 0;
+	}
 }
 @media print,screen and (min-width:961px) {
 	.title {
@@ -160,35 +214,39 @@ body {
 	.part-partners .title {
 		margin-bottom:72px
 	}
+	.line {
+		display: block;
+	}
+	#sub-home {
+		background: url("/assets/img/soron-magyarorszag-alkusz.jpg") top center no-repeat;
+	}
+	section.part-headline#home {
+		/*szürke: #bcc6d2*/
+		/*background: #bcc6d2;*/
+		background: -webkit-linear-gradient(left, #abe647 50%, #bcc6d2 50%);
+		background: -o-linear-gradient(left, #abe647 50%, #bcc6d2 50%);
+		background: -moz-linear-gradient(left, #abe647 50%, #bcc6d2 50%);
+		background: linear-gradient(left, #abe647 50%, #bcc6d2 50%);
+	}
 }
-
-
-
 
 section.part-headline#home {
 	/*szürke: #bcc6d2*/
 	/*background: #bcc6d2;*/
-	background: -webkit-linear-gradient(left, #abe647 50%, #bcc6d2 50%);
-	background: -o-linear-gradient(left, #abe647 50%, #bcc6d2 50%);
-	background: -moz-linear-gradient(left, #abe647 50%, #bcc6d2 50%);
-	background: linear-gradient(left, #abe647 50%, #bcc6d2 50%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ace647', endColorstr='#bcc6d2', GradientType=1 );
 	position: relative;
-	max-height: 700px;
-	height: 700px;
+	max-height: 698px;
+	height: 698px;
 }
 
 #sub-home {
 	position: absolute;
 	width: 100%;
 	height: 700px;
-	background: url("/assets/img/soron-magyarorszag-alkusz.jpg") top center no-repeat;
 	font-family: arial;
 }
 
 #home-text {
 	display: inline-block;
-	width: 1000px;
 	padding: 100px 0;
 }
 
@@ -232,7 +290,6 @@ section.part-headline#home {
 
 .left-points {
 	width: 136px;
-	margin-left: 178px;
 	letter-spacing: 2px;
 }
 
@@ -278,8 +335,8 @@ a.anchor {
 
 	z-index: 2;
 
-    -ms-transform: rotate(-30deg); /* IE 9 */
-    -webkit-transform: rotate(-30deg); /* Chrome, Safari, Opera */
+    -ms-transform: rotate(-30deg);
+    -webkit-transform: rotate(-30deg);
     transform: rotate(-30deg);
 }
 
@@ -294,8 +351,8 @@ a.anchor {
 
 	z-index: 2;
 
-    -ms-transform: rotate(30deg); /* IE 9 */
-    -webkit-transform: rotate(30deg); /* Chrome, Safari, Opera */
+    -ms-transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
     transform: rotate(30deg);
 }
 
@@ -309,25 +366,45 @@ a.anchor {
 
 	z-index: 2;
 
-    -ms-transform: rotate(30deg); /* IE 9 */
-    -webkit-transform: rotate(30deg); /* Chrome, Safari, Opera */
+    -ms-transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
     transform: rotate(30deg);
 }
 
-#green-line-left {
+.header #yellow-line-right {
 	width: 1px;
-	height: 10px;
-	position: absolute;
-	top: 300px;
-	right: 10px;
+	height: 1000px;
+	position: fixed;
+	top: -300px;
+	left: 1250px;
 	/*border-left: 1px solid #DBF353;*/
-	border-left: 1px solid black;
+	border-left: 1px solid #FDFF97;
 
 	z-index: 4;
 
     -ms-transform: rotate(30deg); /* IE 9 */
     -webkit-transform: rotate(30deg); /* Chrome, Safari, Opera */
     transform: rotate(30deg);
+}
+
+.header #green-line-left {
+	width: 1px;
+	height: 1000px;
+	position: fixed;
+	top: -25px;
+	right: 750px;
+	border-left: 1px solid #DBF353;
+
+	z-index: 4;
+
+    -ms-transform: rotate(-30deg); /* IE 9 */
+    -webkit-transform: rotate(-30deg); /* Chrome, Safari, Opera */
+    transform: rotate(-30deg);
+}
+
+.scroll-header #green-line-left {
+	top: -55px;
+	transition: .05s ease-out;
 }
 
 .scroll-header {
@@ -341,4 +418,8 @@ a.anchor {
 	overflow:hidden;
 	transition:.2s ease-out;
 	z-index:3;
+}
+
+.relative {
+	position: relative;
 }
