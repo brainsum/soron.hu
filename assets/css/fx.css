@@ -62,6 +62,12 @@ body {
 }
 
 
+@media print,screen and (max-width:210px) {
+	.header{
+		display: none;
+	}
+}
+
 @media print,screen and (max-width:480px) {
 	.line {
 		display: none;
