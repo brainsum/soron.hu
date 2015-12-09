@@ -303,7 +303,7 @@
         <div id="sub-home">
             <div id="home-text" class="left">
                 <div id="headline-title-1">
-                    <span>Felelősség- teljes telephelyi-, gépjármű flottára szóló </span>
+                    <span>Cégeknek szóló vállalati vagyon-, és felelősség</span>
                     <span class="white bold">biztosítások</span>
                 </div>
                 <div id="headline-2-3-container">
@@ -315,12 +315,15 @@
                     <div id="headline-3-container">
                         <div class="md-3 inline-block left-points points"></div>
                         <div class="md-4 inline-block left" id="headline-title-3">
-                            Szakértelmünk és<br />
-                            tapasztalatunk alapján a plac<br />
-                            teljes kínálatának áttekintése<br/>
-                            után választjuk ki az ügyfél<br />
-                            számára legmegfelelőbb<br />
-                            konstrukciót
+                            Jöhet bármi!<br />
+                            A SORON szakértői profi segítséget adnak, hogy<br />
+                            Ön, és Cége védve legyen<br />
+                            bármi történjen.<br />
+                            <div class="top-button-container center">
+                                <span class="link t-trigger" id="services-button-top">
+                                    <a href="#szolgaltatasunk">Megnézem</a>
+                                </span>
+                            </div>
                         </div>
                         <div class="md-3 inline-block points"></div>
                     </div>
@@ -340,9 +343,9 @@
                 <h3 class="title" id="about-us-title">Rólunk</h3>
 
                 <div class="content about-us-content">
-                    <p>Cégünk a Soron Magyarország Alkusz 2003. február 21.-én kapta meg az engedélyt a Pénzügyi Szervezetek Állami Felügyeletétől, biztosítási alkuszi tevékenység folytatására.
+                    <p>A SORON Magyarország Alkusz 2003. februárja óta áll az ügyfelek védelmének szolgálatában.
                     <br />
-                    A társaság alapítói 1997 óta foglalkoznak biztosítási tanácsadással. A társaság megalapításának a célja, egy olyan független, professzionális tanácsadócég létrehozása volt, amely a nemzetközi elvárásoknak megfelelő biztosítási tanácsadói szolgáltatásokat nyújt, elsősorban cégeknek.</p>
+                    A cég szakértői 1997 óta foglalkoznak ügyfél támogatással a biztosítások területén. Ezért egy olyan független, professzionális tanácsadócéget hoztunk létre, amely a nemzetközi elvárásoknak is megfelelő szolgáltatásokat nyújt, elsősorban cégeknek.</p>
                 </div>
                 <div class="content t-target about-us-content" id="about-us-footer">
                     <p>Társaságunk többéves biztosításszakmai gyakorlattal rendelkező tulajdonosokból és munkatársakból áll, amely biztosítéka az ügyfeleket mind teljesebben kiszolgálni tudó munkánknak.</p>
@@ -350,7 +353,7 @@
                     <p><strong>Fő tevékenységi körünk a vállalkozásoknak nyújtott szakmai-, és tevékenységükhöz kapcsolódó felelősségbiztosítások, teljes telephelyi-, gépjármű flottára szóló biztosítások. Egyedülálló megoldásokkal rendelkezünk vagyonkezelő, és társasházkezelők részére.</strong></p>
                     <p>Az általunk kínált szolgáltatások legnagyobb előnye, hogy szakértelmünk és tapasztalatunk alapján a piac teljes kínálatának áttekintése után választjuk ki az ügyfél számára legmegfelelőbb konstrukciót.</p>
                     <p>A Soron Magyarország Alkusznál kiemelt hangsúlyt kap az ügyfelek valós kockázatának felmérése alapján, személyes, egyedi igényeinek figyelembe vétele és maradéktalan kiszolgálása.</p>
-                    <p><strong>Káresemény esetén tanácsot adunk, illetve közreműködünk a szakszerű és gyors kárrendezésben.</strong></p>
+                    <p><strong>Káresemény esetén értékes segítséget nyújtunk, hogy ügyfeleink maradéktalan igénye érvényesüljön.</strong></p>
                 </div>
             </div>
 
@@ -423,9 +426,8 @@
                 <h3 class="title" id="why-soron-title">Miért a Soron Magyarország Alkusz?</h3>
 
                 <ul class="list list-text" id="why-soron-list">
-                    <li class="item">Mert munkatársaink egytől egyig többéves biztosítónál szerzett értékesítési tapasztalattal rendelkeznek.</li>
-                    <li class="item">Mert a Soron Magyarország Alkusz adminisztratív, informatikai, továbbá 15 éves szaktanácsadói hátterével garantálja ügyfeleinek a magas színvonalú kiszolgálását.</li>
-                    <li class="item">Mert a többéves biztosítási szakmában eltöltött idõ alatt kiépült kapcsolati rendszerünk megalapozta a gyorsabb, rugalmasabb és eredményesebb ügyintézést minden területen (értékesítési, kárrendezési, informatikai, pénzügyi, szerződéskezelési).</li>
+                    <li class="item">Mert a Soron Magyarország Alkusz adminisztratív, informatikai, továbbá szaktanácsadói hátterével garantálja ügyfeleinek a magas színvonalú kiszolgálást.</li>
+                    <li class="item">Mert a többéves biztosítási szakmában eltöltött idő alatt kiépült kapcsolati rendszerünk megalapozta a gyorsabb, rugalmasabb és eredményesebb ügyintézést minden területen.</li>
                     <li class="item"><strong>Mert az eddigi működésünk alatt hozzánk forduló ügyfelek megismerve különleges, ügyfélbarát szolgáltatási rendszerünket, minket választottak és mellettünk döntöttek egy hosszú távú együttműködésben.</strong></li>
                 </ul>
             </div>
@@ -528,7 +530,7 @@
 
                 <!-- [LAYOUT.FOOTER] FORMAL COMPANY INFORMATIONS -->
 
-                <div class="inline col xs-12 sm-6 md-4">
+                <div class="inline col xs-12 sm-6 md-4" id="tax-data">
                     <dl class="term clearfix">
                         <dt class="name">Adószám</dt>
                         <dd class="data" property="taxID">12921308-1-42</dd>
@@ -541,7 +543,7 @@
 
                 <!-- [LAYOUT.FOOTER] ACCOUNT -->
 
-                <div class="inline col xs-12 sm-6 md-4">
+                <div class="inline col xs-12 sm-6 md-4" id="company-data">
                     <div class="bank">Budapest Bank</div>
                     <dl class="term clearfix">
                         <dt class="name">Főszámla</dt>

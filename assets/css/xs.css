@@ -166,8 +166,6 @@ address {
 #about-us-title {
 	text-align: left;
 	text-transform: none;
-	font-weight: 300;
-	font-size: 35px;
 	margin-top: 35px;
 }
 
@@ -189,8 +187,8 @@ address {
 
 .title {
 	padding:24px 0 48px;	
-	font-size:1.8em;	
-	font-weight:900;	
+	font-size:2em;	
+	font-weight: 200;
 	line-height:1.618em;
 	text-transform: uppercase;
 	color:#CDB4A9;
@@ -260,8 +258,6 @@ address {
 
 #why-soron-title {
 	color: #96E300;
-	font-size: 47px;
-	font-weight: 200;
 	padding-top: 100px;
 }
 
@@ -274,7 +270,6 @@ address {
 #partners-title {
 	color: #CFB882;
 	padding-top: 70px;
-	font-size: 30px;
 	margin-bottom: 30px;
 }
 
@@ -305,6 +300,10 @@ address {
 
 #logo .name,#logo .type,.t-trigger .show {
 	display:block
+}
+
+#logo .name {
+	transition:.2s ease-out;
 }
 
 .header {
@@ -414,6 +413,10 @@ address {
 	content:":"
 }
 
+.part-footer .term .data {
+	margin-left: 5px;
+}
+
 .basic-data {
 	width:85%;
 }
@@ -454,7 +457,7 @@ address {
 }
 
 .part-footer .opening .term .name {	
-	width:40%;
+	width:35%;
 	padding-left: 35px;
 }
 

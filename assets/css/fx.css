@@ -33,7 +33,8 @@ body {
 	left:50%;bottom:130px;height:20px;width:1px;background:#D6D2AC;transform:skewX(-30deg)
 }
 #menu .link {
-	transform:translateZ(0);transition:opacity .2s ease-out
+	transform:translateZ(0);transition:opacity .2s ease-out;
+	transition:.2s ease-out;
 }
 #menu .link:after {
 	left:0;bottom:0;right:0;height:2px;background:#000;transform:rotateY(90deg);transition:.2s ease-out;opacity:.08
@@ -103,14 +104,20 @@ body {
 		line-height: 165%;
 		padding-left: 0px;
 	}
+	#why-soron-title {
+		font-size: 20px;
+	}
+	#company-data .data {
+		width: 100%;
+	}
+	#tax-data .data {
+		width: 100%;
+	}
 }
 
 @media print,screen and (min-width:481px) {
 	.sm-6 {
 		width:50%
-	}
-	.title {
-		font-size:2em
 	}
 	.container {
 		width:456px
@@ -240,12 +247,17 @@ body {
 	#headline-title-1 {
 		text-align: left;
 		line-height: normal;
+		margin-left: 50px;
 	}
 	#headline-2-3-container {
 		text-align: left;
 	}
 	.first-row-list {
 		margin-top: 0;
+	}
+	.basic-name {
+		width:13%;
+		white-space: nowrap;
 	}
 }
 @media print,screen and (min-width:961px) {
@@ -350,11 +362,23 @@ section.part-headline#home {
 }
 
 #headline-title-3 {
-	margin-top: 70px;
-	font-size: 13px;
+	margin-top: 30px;
+	font-size: 20px;
 	font-family: 'Proxima Nova';
 	font-weight: 500;
 	line-height: 180%;
+}
+
+
+#headline-title-3 span#services-button-top{
+	background-color: rgba(255,255,255,0.5);
+	text-transform: none;
+}
+
+#headline-title-3 span#services-button-top a{
+	text-decoration: none;
+	font-weight: 500;
+	color: #0090FF;
 }
 
 .bold {
@@ -369,7 +393,7 @@ section.part-headline#home {
 a.anchor {
     display: block;
     position: relative;
-    top: -98px;
+    top: -68px;
     visibility: hidden;
 }
 
@@ -393,7 +417,7 @@ a.anchor {
 	width: 1px;
 	height: 815px;
 	position: absolute;
-	top: 2700px;
+	top: 2500px;
 	right: 142px;
 	border-left: 1px solid #34FFFC;
 
@@ -408,7 +432,7 @@ a.anchor {
 	width: 1px;
 	height: 815px;
 	position: absolute;
-	top: 2750px;
+	top: 2550px;
 	right: 200px;
 	border-left: 1px solid #DBF353;
 
@@ -452,7 +476,7 @@ a.anchor {
 
 .scroll-header #green-line-left {
 	top: -55px;
-	transition: .05s ease-out;
+	transition: .2s ease-out;
 }
 
 .scroll-header {
@@ -470,4 +494,24 @@ a.anchor {
 
 .relative {
 	position: relative;
+}
+
+.top-button-container {
+	margin-top: 20px;
+	width: 75%;
+}
+
+.title-font {
+	font-weight: 200;
+	font-size: 2em;
+}
+
+#header #menu .link {
+	font-size: 18px;
+	transition:.2s ease-out;
+}
+
+#header #logo .name {
+	font-size: 35px;
+	transition:.2s ease-out;
 }
