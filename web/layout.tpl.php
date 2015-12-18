@@ -25,7 +25,7 @@
     // Partners
 
     $partners = array(
-    "Beltáv Kft.",
+    "Ventwest Kft.",
     "Tampon-Mix Kft.",
     "Zura Kft.",
     "Pet Hungária Kft.",
@@ -46,8 +46,8 @@
     "Torrex Chiesi Kft.",
     "Duplex Drink Kft.",
     "MT Displays Hungary Kft.",
-    "Trilobita Informatikai Rt.",
-    "G4S Biztonsági Szolgáltatások Zrt.",
+    "Duplex Drink Kft",
+    "Perint Kft.",
     "Intego Vagyonkezelő és Szolgáltató Kft.",
     "Melon Fx Kft.",
     "Közbeszerzési Hatóság"
@@ -317,7 +317,7 @@
                         <div class="md-4 inline-block left" id="headline-title-3">
                             Jöhet bármi!<br />
                             A SORON szakértői profi segítséget adnak, hogy<br />
-                            Ön, és Cége védve legyen<br />
+                            Ön és Cége védve legyen,<br />
                             bármi történjen.<br />
                             <div class="top-button-container center">
                                 <span class="link t-trigger" id="services-button-top">
@@ -348,7 +348,20 @@
                     A cég szakértői 1997 óta foglalkoznak ügyfél támogatással a biztosítások területén. Ezért egy olyan független, professzionális tanácsadócéget hoztunk létre, amely a nemzetközi elvárásoknak is megfelelő szolgáltatásokat nyújt, elsősorban cégeknek.</p>
                 </div>
                 <div class="content t-target about-us-content" id="about-us-footer">
-                    <p>Társaságunk többéves biztosításszakmai gyakorlattal rendelkező tulajdonosokból és munkatársakból áll, amely biztosítéka az ügyfeleket mind teljesebben kiszolgálni tudó munkánknak.</p>
+                    <div class="people">
+                        <div class="person-holder">
+                            <img src="/assets/img/somodi-krisztian.jpg" class="person-image"><br />
+                            <span class="person-name">Somodi Krisztián</span><br />
+                            <span class="person-job">Ügyvezető</span>
+                        </div>
+
+                        <div class="person-holder">
+                            <img src="/assets/img/csizmadia-ronaszeki-noemi.jpg" class="person-image"><br />
+                            <span class="person-name">Csizmadia Rónaszéki Noémi</span><br />
+                            <span class="person-job">Szakmai vezető</span>
+                        </div>
+                    </div>
+                    <p id="first-hidden-list-elem">Társaságunk többéves biztosításszakmai gyakorlattal rendelkező tulajdonosokból és munkatársakból áll, amely biztosítéka az ügyfeleket mind teljesebben kiszolgálni tudó munkánknak.</p>
                     <p>Partneri kapcsolatainkat a bizalomra építjük, legfontosabb mércénk ügyfeleink hosszú távú elégedettsége. Alapvető értékeink közé tartozik a megbízhatóság, szakértelem, előrelátás és gondoskodás. Nagy hangsúlyt helyezünk a folyamatos képzésre, hogy ügyfeleink számára valóban értékes szakmai segítséget nyújthassunk.</p>
                     <p><strong>Fő tevékenységi körünk a vállalkozásoknak nyújtott szakmai-, és tevékenységükhöz kapcsolódó felelősségbiztosítások, teljes telephelyi-, gépjármű flottára szóló biztosítások. Egyedülálló megoldásokkal rendelkezünk vagyonkezelő, és társasházkezelők részére.</strong></p>
                     <p>Az általunk kínált szolgáltatások legnagyobb előnye, hogy szakértelmünk és tapasztalatunk alapján a piac teljes kínálatának áttekintése után választjuk ki az ügyfél számára legmegfelelőbb konstrukciót.</p>
@@ -578,7 +591,7 @@
 
             <a id="logo" class="inline-group link" href="/#home">
                 <h1 class="inline site" about="mainEntity">
-                    <strong class="name" property="name">Soron</strong>
+                    <img src="/assets/img/logo.png" class="logo-img">
                 </h1>
             </a>
 
