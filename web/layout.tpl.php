@@ -357,7 +357,7 @@
 
                         <div class="person-holder">
                             <img src="/assets/img/csizmadia-ronaszeki-noemi.jpg" class="person-image"><br />
-                            <span class="person-name">Csizmadia Rónaszéki Noémi</span><br />
+                            <span class="person-name">Csizmadia-Rónaszéki Noémi</span><br />
                             <span class="person-job">Szakmai vezető</span>
                         </div>
                     </div>
