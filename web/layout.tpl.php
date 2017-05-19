@@ -485,9 +485,9 @@
                         <strong class="company" property="legalName" id="company-name"><?=$org->getName(true)?></strong>
                         <dl class="term clearfix">
                             <dt class="name basic-name">Telefon</dt>
-                            <dd class="data basic-data" property="telephone">+36 (1) 220-9393</dd>
+                            <dd class="data basic-data" property="telephone">+36 (1) 615-2805</dd>
                             <dt class="name basic-name">Fax</dt>
-                            <dd class="data basic-data" property="faxNumber">+36 (1) 220-3400</dd>
+                            <dd class="data basic-data" property="faxNumber">+36 (1) 615-2805</dd>
                             <dt class="name basic-name">E-mail</dt>
                             <dd class="data basic-data">
                                 <a class="link" href="mailto:info@soron.hu" property="email" content="info@soron.hu">info@soron.hu</a>
@@ -512,9 +512,9 @@
 
                     <address class="content" property="location" typeof="PostalAddress">
                         <meta property="addressCountry" content="Hungary"/>
-                        <span property="postalCode">1093 </span>
+                        <span property="postalCode">1116 </span>
                         <span property="addressLocality">Budapest </span>
-                        <span property="streetAddress">Lónyay u. 36.</span>
+                        <span property="streetAddress">Temesvár u. 20.</span>
                     </address>
 
                 </div>
