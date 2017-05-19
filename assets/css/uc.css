@@ -275,28 +275,28 @@ address {
   display: block;
 }
 
-#header {
+.header {
   position: fixed;
   left: 0;
   top: 0;
   right: 0;
-  height: 150px;
+  height: 140px;
   padding-top: 40px;
   background: #fff;
   backface-visibility: hidden;
   z-index: 2;
 }
 
-#header .container {
+.header .container {
   height: 100%;
 }
 
-#header .link {
+.header .link {
   color: #000;
   opacity: .87;
 }
 
-#header .inline-middle {
+.header .inline-middle {
   height: 100%;
 }
 
@@ -434,7 +434,7 @@ address {
 
 .part-headline {
   position: relative;
-  padding: 150px 240px 0 0;
+  padding: 1500px 240px 0 0;
   height: 850px;
   max-height: 100vh;
   overflow: hidden;

@@ -25,7 +25,7 @@
     // Partners
 
     $partners = array(
-    "Beltáv Kft.",
+    "Ventwest Kft.",
     "Tampon-Mix Kft.",
     "Zura Kft.",
     "Pet Hungária Kft.",
@@ -46,8 +46,8 @@
     "Torrex Chiesi Kft.",
     "Duplex Drink Kft.",
     "MT Displays Hungary Kft.",
-    "Trilobita Informatikai Rt.",
-    "G4S Biztonsági Szolgáltatások Zrt.",
+    "Duplex Drink Kft",
+    "Perint Kft.",
     "Intego Vagyonkezelő és Szolgáltató Kft.",
     "Melon Fx Kft.",
     "Közbeszerzési Hatóság"
@@ -299,46 +299,83 @@
 
     <!-- [LAYOUT.CONTENT] HEADLINE -->
 
-    <section class="block part-headline" id="home" tabindex="<?=$page->getTabIndex()?>">
-        <div class="back" property="primaryImageOfPage" typeof="ImageObject"><meta property="url" content="<?=Http::getHost()."{$meta->lead}"?>"/></div>
-        <div class="fade"></div>
-        <div class="text">
-            <h2 class="title">
-                <span>Felelősség-, teljes telephelyi- és gépjármű flottára szóló</span>
-                <span class="lead">biztosítások</span>
-            </h2>
-            <strong class="lead">Hosszú távon</strong>
-            <em class="shape">Szakértelmünk és tapasztalatunk alapján a piac teljes kínálatának áttekintése után választjuk ki az ügyfél számára legmegfelelőbb konstrukciót</em>
+    <section class="part-headline" id="home" tabindex="<?=$page->getTabIndex()?>">
+        <div id="sub-home">
+            <div id="home-text" class="left">
+                <div id="headline-title-1">
+                    <span>Cégeknek szóló vállalati vagyon-, és felelősség</span>
+                    <span class="white bold">biztosítások</span>
+                </div>
+                <div id="headline-2-3-container">
+                    <div id="headline-title-2" class="capital white">
+                        <div class="md-3 inline-block center left-points points">...</div>
+                        <div class="md-3 inline-block left" id="the-title">Hosszú távon</div>
+                        <div class="md-3 inline-block left points">.......</div>
+                    </div>
+                    <div id="headline-3-container">
+                        <div class="md-3 inline-block left-points points"></div>
+                        <div class="md-4 inline-block left" id="headline-title-3">
+                            Jöhet bármi!<br />
+                            A SORON szakértői profi segítséget adnak, hogy<br />
+                            Ön és Cége védve legyen,<br />
+                            bármi történjen.<br />
+                            <div class="top-button-container center">
+                                <span class="link t-trigger" id="services-button-top">
+                                    <a href="#szolgaltatasunk">Megnézem</a>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="md-3 inline-block points"></div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- [LAYOUT.CONTENT] PORTFOLIO -->
 
-    <section class="block part-portfolio" id="rolunk" tabindex="<?=$page->getTabIndex()?>">
+    <section class="block part-portfolio" tabindex="<?=$page->getTabIndex()?>">
+        <a class="anchor" id="rolunk"></a>
         <div class="wrapper bg">
             <input class="hidden t-state" id="x-p" type="checkbox" aria-hidden="true"/>
 
             <div class="container">
-                <h3 class="title">Rólunk</h3>
+                <h3 class="title" id="about-us-title">Rólunk</h3>
 
-                <div class="content">
-                    <p>Cégünk a Soron Magyarország Alkusz 2003. február 21.-én kapta meg az engedélyt a Pénzügyi Szervezetek Állami Felügyeletétől, biztosítási alkuszi tevékenység folytatására.</p>
-                    <p>A társaság alapítói 1997 óta foglalkoznak biztosítási tanácsadással. A társaság megalapításának a célja, egy olyan független, professzionális tanácsadócég létrehozása volt, amely a nemzetközi elvárásoknak megfelelő biztosítási tanácsadói szolgáltatásokat nyújt, elsősorban cégeknek.</p>
+                <div class="content about-us-content">
+                    <p>A SORON Magyarország Alkusz 2003. februárja óta áll az ügyfelek védelmének szolgálatában.
+                    <br />
+                    A cég szakértői 1997 óta foglalkoznak ügyfél támogatással a biztosítások területén. Ezért egy olyan független, professzionális tanácsadócéget hoztunk létre, amely a nemzetközi elvárásoknak is megfelelő szolgáltatásokat nyújt, elsősorban cégeknek.</p>
                 </div>
-                <div class="content t-target">
-                    <p>Társaságunk többéves biztosításszakmai gyakorlattal rendelkező tulajdonosokból és munkatársakból áll, amely biztosítéka az ügyfeleket mind teljesebben kiszolgálni tudó munkánknak.</p>
+                <div class="content t-target about-us-content" id="about-us-footer">
+                    <div class="people">
+                        <div class="person-holder">
+                            <img src="/assets/img/somodi-krisztian.jpg" class="person-image"><br />
+                            <span class="person-name">Somodi Krisztián</span><br />
+                            <span class="person-job">Ügyvezető</span>
+                        </div>
+
+                        <div class="person-holder">
+                            <img src="/assets/img/csizmadia-ronaszeki-noemi.jpg" class="person-image"><br />
+                            <span class="person-name">Csizmadia-Rónaszéki Noémi</span><br />
+                            <span class="person-job">Szakmai vezető</span>
+                        </div>
+                    </div>
+                    <p id="first-hidden-list-elem">Társaságunk többéves biztosításszakmai gyakorlattal rendelkező tulajdonosokból és munkatársakból áll, amely biztosítéka az ügyfeleket mind teljesebben kiszolgálni tudó munkánknak.</p>
                     <p>Partneri kapcsolatainkat a bizalomra építjük, legfontosabb mércénk ügyfeleink hosszú távú elégedettsége. Alapvető értékeink közé tartozik a megbízhatóság, szakértelem, előrelátás és gondoskodás. Nagy hangsúlyt helyezünk a folyamatos képzésre, hogy ügyfeleink számára valóban értékes szakmai segítséget nyújthassunk.</p>
                     <p><strong>Fő tevékenységi körünk a vállalkozásoknak nyújtott szakmai-, és tevékenységükhöz kapcsolódó felelősségbiztosítások, teljes telephelyi-, gépjármű flottára szóló biztosítások. Egyedülálló megoldásokkal rendelkezünk vagyonkezelő, és társasházkezelők részére.</strong></p>
                     <p>Az általunk kínált szolgáltatások legnagyobb előnye, hogy szakértelmünk és tapasztalatunk alapján a piac teljes kínálatának áttekintése után választjuk ki az ügyfél számára legmegfelelőbb konstrukciót.</p>
                     <p>A Soron Magyarország Alkusznál kiemelt hangsúlyt kap az ügyfelek valós kockázatának felmérése alapján, személyes, egyedi igényeinek figyelembe vétele és maradéktalan kiszolgálása.</p>
-                    <p><strong>Káresemény esetén tanácsot adunk, illetve közreműködünk a szakszerű és gyors kárrendezésben.</strong></p>
+                    <p><strong>Káresemény esetén értékes segítséget nyújtunk, hogy ügyfeleink maradéktalan igénye érvényesüljön.</strong></p>
                 </div>
             </div>
 
-            <label for="x-p" class="link t-trigger" aria-hidden="true" tabindex="<?=$page->getTabIndex()?>">
-                <span class="text show">Bővebben</span>
-                <span class="text hide">Bezár</span>
-            </label>
+            <!--<div class="button-holder">-->
+                <label for="x-p" class="link t-trigger" id="first-button2" aria-hidden="true" tabindex="<?=$page->getTabIndex()?>">
+                    <span class="text show">Bővebben</span>
+                    <span class="text hide">Bezár</span>
+                </label>
+            <!--</div>-->
         </div>
     </section>
 
@@ -348,22 +385,23 @@
 
     <!-- [LAYOUT.CONTENT] SERVICES -->
 
-    <section class="block part-services" id="szolgaltatasunk" tabindex="<?=$page->getTabIndex()?>">
+    <section class="block part-services" id="" tabindex="<?=$page->getTabIndex()?>">
+        <a class="anchor" id="szolgaltatasunk"></a>
         <div class="wrapper bg">
             <input class="hidden t-state" id="x-s" type="checkbox" aria-hidden="true"/>
 
             <div class="container">
-                <h2 class="title">Szolgáltatásunk</h2>
+                <h2 class="title" id="services-title">Szolgáltatásunk</h2>
 
                 <div class="inline xs-12 sm-6">
                     <h4 class="title-sub">Ügyfeleink az alábbi szolgáltatásokat kapják</h4>
 
-                    <ul class="list list-text">
+                    <ul class="list list-text service-list first-row-list">
                         <li class="item">biztosítási szolgáltatások</li>
                         <li class="item">kockázatfelmérés és kockázatelemzés</li>
                         <li class="item">a kockázatok csökkentésére, ill. kiküszöbölésére vonatkozó módszerek kidolgozása</li>
                     </ul>
-                    <ul class="list list-text t-target">
+                    <ul class="list list-text t-target service-list">
                         <li class="item">az elkerülhetetlen kockázatok áthárítására biztosítási program kialakítása</li>
                         <li class="item">a biztosítási programban megfogalmazott kockázatokra vonatkozó biztosítási fedezet megszervezése a biztosítók versenyeztetésével</li>
                         <li class="item">a biztosítók ajánlatainak elemzése a biztosított részére, a biztosító által nyújtott szolgáltatások és feltételrendszerek, valamint a biztosítási díj figyelembevételével</li>
@@ -373,12 +411,12 @@
                 <div class="inline xs-12 sm-6">
                     <h4 class="title-sub">A partneri kapcsolat fennállása alatt az alábbi szolgáltatásokat kínáljuk</h4>
 
-                    <ul class="list list-text">
+                    <ul class="list list-text service-list first-row-list">
                         <li class="item">a felmerülő új biztosítási igények szakszerű megfogalmazása</li>
                         <li class="item">Partnerünk meglévő biztosítási szerződéseinek kezelése, felülvizsgálata és az esetlegesen szükséges módosításokra vonatkozó javaslatok kidolgozása</li>
                         <li class="item">káresemény alkalmával szakszerű felvilágosítás nyújtása a követendő eljárásról</li>
                     </ul>
-                    <ul class="list list-text t-target">
+                    <ul class="list list-text t-target service-list">
                         <li class="item">kárrendezés során közreműködünk abban, hogy Partnerünk törvényes érdeke maradéktalanul érvényesüljön tájékoztatás a biztosítási piacon felmerülő új lehetőségekről</li>
                         <li class="item">egyéni igények alapján testre szabott szolgáltatás nyújtása</li>
                     </ul>
@@ -394,15 +432,15 @@
 
     <!-- [LAYOUT.CONTENT] WHY US -->
 
-    <section class="block part-about" id="miert-a-soron" tabindex="<?=$page->getTabIndex()?>">
+    <section class="block part-about" tabindex="<?=$page->getTabIndex()?>">
+    <a class="anchor" id="miert-a-soron"></a>
         <div class="wrapper bg">
             <div class="container">
-                <h3 class="title">Miért a Soron Magyarország Alkusz?</h3>
+                <h3 class="title" id="why-soron-title">Miért a Soron Magyarország Alkusz?</h3>
 
-                <ul class="list list-text">
-                    <li class="item">Mert munkatársaink egytől egyig többéves biztosítónál szerzett értékesítési tapasztalattal rendelkeznek.</li>
-                    <li class="item">Mert a Soron Magyarország Alkusz adminisztratív, informatikai, továbbá 15 éves szaktanácsadói hátterével garantálja ügyfeleinek a magas színvonalú kiszolgálását.</li>
-                    <li class="item">Mert a többéves biztosítási szakmában eltöltött idõ alatt kiépült kapcsolati rendszerünk megalapozta a gyorsabb, rugalmasabb és eredményesebb ügyintézést minden területen (értékesítési, kárrendezési, informatikai, pénzügyi, szerződéskezelési).</li>
+                <ul class="list list-text" id="why-soron-list">
+                    <li class="item">Mert a Soron Magyarország Alkusz adminisztratív, informatikai, továbbá szaktanácsadói hátterével garantálja ügyfeleinek a magas színvonalú kiszolgálást.</li>
+                    <li class="item">Mert a többéves biztosítási szakmában eltöltött idő alatt kiépült kapcsolati rendszerünk megalapozta a gyorsabb, rugalmasabb és eredményesebb ügyintézést minden területen.</li>
                     <li class="item"><strong>Mert az eddigi működésünk alatt hozzánk forduló ügyfelek megismerve különleges, ügyfélbarát szolgáltatási rendszerünket, minket választottak és mellettünk döntöttek egy hosszú távú együttműködésben.</strong></li>
                 </ul>
             </div>
@@ -411,12 +449,13 @@
 
     <!-- [LAYOUT.CONTENT] PARTNERS -->
 
-    <section class="block part-partners" id="partnereink" tabindex="<?=$page->getTabIndex()?>">
+    <section class="block part-partners" id="our-partners" tabindex="<?=$page->getTabIndex()?>">
+    <a class="anchor" id="partnereink"></a>
         <div class="wrapper bg">
             <div class="container">
-                <h3 class="title title-big">Partnereink</h3>
+                <h3 class="title title-big" id="partners-title">Partnereink</h3>
 
-                <ul class="list">
+                <ul class="list" id="partners-list">
                     <?php foreach ($partners as $partnerName) : ?>
                         <li class="inline item xs-12 sm-6 md-4"><em class="text"><?=htmlspecialchars($partnerName)?></em></li>
                     <?php endforeach ?>
@@ -429,27 +468,28 @@
     <!-- [LAYOUT] FOOTER -->
     <!-- ================================== -->
 
-    <footer id="kapcsolat" class="block part-footer" property="mainEntity" typeof="InsuranceAgency" tabindex="<?=$page->getTabIndex()?>">
+    <footer class="block part-footer" property="mainEntity" typeof="InsuranceAgency" tabindex="<?=$page->getTabIndex()?>">
+        <a class="anchor" id="kapcsolat"></a>
         <div class="wrapper bg">
             <?php
                 $about = "#{$org->getSlug()}";
             ?>
-            <div class="container decorated">
+            <div class="container decorated" id="footer-whole-container">
 
                 <!-- [LAYOUT.FOOTER] CONTACT -->
 
                 <div class="inline xs-12 md-4">
-                    <h4 class="inline col title xs-12 sm-6 md-12">Kapcsolat</h4>
+                    <h4 class="inline col title xs-12 sm-6 md-12 footer-h4">Kapcsolat</h4>
 
                     <div class="inline col content xs-12 sm-6 md-12">
-                        <strong class="company" property="legalName"><?=$org->getName(true)?></strong>
+                        <strong class="company" property="legalName" id="company-name"><?=$org->getName(true)?></strong>
                         <dl class="term clearfix">
-                            <dt class="name">Telefon</dt>
-                            <dd class="data" property="telephone">+36 (1) 220-9393</dd>
-                            <dt class="name">Fax</dt>
-                            <dd class="data" property="faxNumber">+36 (1) 220-3400</dd>
-                            <dt class="name">E-mail</dt>
-                            <dd class="data">
+                            <dt class="name basic-name">Telefon</dt>
+                            <dd class="data basic-data" property="telephone">+36 (1) 220-9393</dd>
+                            <dt class="name basic-name">Fax</dt>
+                            <dd class="data basic-data" property="faxNumber">+36 (1) 220-3400</dd>
+                            <dt class="name basic-name">E-mail</dt>
+                            <dd class="data basic-data">
                                 <a class="link" href="mailto:info@soron.hu" property="email" content="info@soron.hu">info@soron.hu</a>
                             </dd>
                         </dl>
@@ -459,21 +499,21 @@
                 <!-- [LAYOUT.FOOTER] ADDRESS -->
 
                 <div class="inline col xs-12 sm-6 md-4">
-                    <h4 class="title">Cégünk székhelye</h4>
+                    <h4 class="title footer-h4">Cégünk székhelye</h4>
 
                     <address class="content" property="address" typeof="PostalAddress">
                         <meta property="addressCountry" content="Hungary"/>
-                        <span property="postalCode">1142</span>
-                        <span property="addressLocality">Budapest</span>
+                        <span property="postalCode">1142 </span>
+                        <span property="addressLocality">Budapest </span>
                         <span property="streetAddress">Sárrét park 5/A.</span>
                     </address>
 
-                    <h4 class="title">Irodánk címe</h4>
+                    <h4 class="title footer-h4">Irodánk címe</h4>
 
                     <address class="content" property="location" typeof="PostalAddress">
                         <meta property="addressCountry" content="Hungary"/>
-                        <span property="postalCode">1093</span>
-                        <span property="addressLocality">Budapest</span>
+                        <span property="postalCode">1093 </span>
+                        <span property="addressLocality">Budapest </span>
                         <span property="streetAddress">Lónyay u. 36.</span>
                     </address>
 
@@ -482,7 +522,7 @@
                 <!-- [LAYOUT.FOOTER] OPENING-HOURS -->
 
                 <div class="inline col xs-12 sm-6 md-4 opening">
-                    <h4 class="title">Nyitvatartás</h4>
+                    <h4 class="title footer-h4">Nyitvatartás</h4>
 
                     <dl class="term clearfix">
                         <dt class="item name">Hétfő</dt>
@@ -503,7 +543,7 @@
 
                 <!-- [LAYOUT.FOOTER] FORMAL COMPANY INFORMATIONS -->
 
-                <div class="inline col xs-12 sm-6 md-4">
+                <div class="inline col xs-12 sm-6 md-4" id="tax-data">
                     <dl class="term clearfix">
                         <dt class="name">Adószám</dt>
                         <dd class="data" property="taxID">12921308-1-42</dd>
@@ -516,8 +556,8 @@
 
                 <!-- [LAYOUT.FOOTER] ACCOUNT -->
 
-                <div class="inline col xs-12 sm-6 md-4">
-                    <strong class="bank">Budapest Bank</strong>
+                <div class="inline col xs-12 sm-6 md-4" id="company-data">
+                    <div class="bank">Budapest Bank</div>
                     <dl class="term clearfix">
                         <dt class="name">Főszámla</dt>
                         <dd class="data">10100840-57517600-01000008</dd>
@@ -529,8 +569,8 @@
                 <!-- [LAYOUT.FOOTER] DOWNLOADABLE CONTENT -->
 
                 <div class="inline col xs-12 md-4 docs">
-                    <a href="/#" class="link" tabindex="<?=$page->getTabIndex()?>">Fogyasztói panasz bejelentő</a>
-                    <a href="/#" class="link" tabindex="<?=$page->getTabIndex()?>">Panaszkezelési információk</a>
+                    <a target="_blank" href="/assets/other_files/fogyasztoi_panaszbejelento.pdf" class="link" tabindex="<?=$page->getTabIndex()?>">Fogyasztói panaszbejelentő</a>
+                    <a target="_blank" href="/assets/other_files/panaszkezelesi_szabalyzat_soron.pdf" class="link" tabindex="<?=$page->getTabIndex()?>">Panaszkezelési információk</a>
                 </div>
             </div>
         </div>
@@ -540,18 +580,18 @@
     <!-- [LAYOUT] HEADER -->
     <!-- ================================== -->
 
-    <header id="header">
-        <div class="container clearfix">
-
+    <!-- header id is only for js, don't add more class names, because js changes it back to 'header'
+        on scroll down the class name will change to scroll-header
+     -->
+    <header id="header" class="header">
+        <div id="green-line-left"> </div>
+        <div id="yellow-line-right"> </div>
+        <div class="container clearfix relative">
             <!-- [LAYOUT.HEADER] LOGO -->
 
             <a id="logo" class="inline-group link" href="/#home">
-                <?php
-                    $logoName = explode(' ', $org->getName());
-                    $logoName = array_shift($logoName);
-                ?><h1 class="inline site" about="mainEntity">
-                    <strong class="name" property="name"><?=$logoName?></strong>
-                    <small class="type"><?=$org->getText('typo')?></small>
+                <h1 class="inline site" about="mainEntity">
+                    <img src="/assets/img/logo.png" class="logo-img">
                 </h1>
             </a>
 
@@ -576,6 +616,7 @@
                     </li>
                 </ul>
             </nav>
+
         </div>
     </header>
 
@@ -608,8 +649,20 @@
         <?php foreach ($access['control'] as $option) echo '<meta property="accessibilityControl" content="full'.$option.'Control"/>' ?>
     </div>
 
+    <div id="blue-line" class="line"> </div>
+    <div id="blue-line-right" class="line"> </div>
+    <div id="green-line-right" class="line"> </div>
+
     <!-- [SCRIPTS] -->
 
     <script src="/src/js/app.js" defer="defer"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-72245470-1', 'auto');
+      ga('send', 'pageview');
+    </script>
 </body>
 </html>
