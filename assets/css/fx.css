@@ -1,1 +1,573 @@
-#menu .link,.block{backface-visibility:hidden}#menu .item:after,#menu .link:after{position:absolute;display:block;content:" "}@font-face{font-family:"Proxima Nova";font-weight:400;font-style:normal;src:url(/assets/fonts/proximanova-regular.eot);src:url(/assets/fonts/proximanova-regular.eot?#iefix) format('embedded-opentype'),url(/assets/fonts/proximanova-regular.woff2) format('woff2'),url(/assets/fonts/proximanova-regular.woff) format('woff'),url(/assets/fonts/proximanova-regular.ttf) format('truetype'),url(/assets/fonts/proximanova-regular.svg#proxima_nova_regular) format('svg')}@font-face{font-family:"Proxima Nova";font-weight:300;font-style:normal;src:url(/assets/fonts/proximanova-light.eot);src:url(/assets/fonts/proximanova-light.eot?#iefix) format('embedded-opentype'),url(/assets/fonts/proximanova-light.woff2) format('woff2'),url(/assets/fonts/proximanova-light.woff) format('woff'),url(/assets/fonts/proximanova-light.ttf) format('truetype'),url(/assets/fonts/proximanova-light.svg#proxima_nova_light) format('svg')}@font-face{font-family:"Proxima Nova";font-weight:500;font-style:normal;src:url(/assets/fonts/proximanova-semibold.eot);src:url(/assets/fonts/proximanova-semibold.eot?#iefix) format('embedded-opentype'),url(/assets/fonts/proximanova-semibold.woff2) format('woff2'),url(/assets/fonts/proximanova-semibold.woff) format('woff'),url(/assets/fonts/proximanova-semibold.ttf) format('truetype'),url(/assets/fonts/proximanova-semibold.svg#proxima_nova_semibold) format('svg')}body{font-family:"Proxima Nova"}.block{transform:translateZ(0)}#menu .item:after{left:50%;bottom:130px;height:20px;width:1px;background:#D6D2AC;transform:skewX(-30deg)}#menu .link{transform:translateZ(0);transition:opacity .2s ease-out}#menu .link:after{left:0;bottom:0;right:0;height:2px;background:#000;transform:rotateY(90deg);transition:.2s ease-out;opacity:.08}.part-about:target~#header .link-about,.part-footer:target~#header .link-footer,.part-partners:target~#header .link-partners,.part-portfolio:target~#header .link-portfolio,.part-services:target~#header .link-services{opacity:1}.part-about:target~#header .link-about:after,.part-footer:target~#header .link-footer:after,.part-partners:target~#header .link-partners:after,.part-portfolio:target~#header .link-portfolio:after,.part-services:target~#header .link-services:after{background:#68C7A9;opacity:1}#menu .link:hover:after,.part-about:target~#header .link-about:after,.part-footer:target~#header .link-footer:after,.part-partners:target~#header .link-partners:after,.part-portfolio:target~#header .link-portfolio:after,.part-services:target~#header .link-services:after{transform:rotateY(0)}.part-footer .docs .link{opacity:.6;transition:opacity .2s ease-out}.part-footer .docs .link:focus,.part-footer .docs .link:hover{opacity:.8}.part-footer .docs .link:active{opacity:1}.part-illumination{background-image:url(/assets/img/soron-biztositas-kockazatelemzes.jpg)}@media print,screen and (min-width:481px){.sm-6{width:50%}.title{font-size:2.25em}.container{width:456px}.part-footer .bank{padding-bottom:24px}.part-services .title-sub{height:5em}.part-partners .list{text-align:left}.part-partners .item{padding:0 12px;vertical-align:top}}@media print,screen and (min-width:769px){.md-4{width:33.333%}.md-12{width:100%}.container{width:744px;padding-left:48px;padding-right:48px}#logo{float:left}#logo .type{display:none}#menu{display:block;float:right;height:100%}#menu .item{position:relative;height:100%}#menu .item:before{display:inline-block;content:" ";font:0/0 a;width:0;height:100%;vertical-align:middle;overflow:hidden}#menu .item+.item{margin-left:6px}#menu .link{position:relative;padding:12px 6px;opacity:.5}#menu .link:hover{opacity:.7}.part-footer .account .col{vertical-align:top}.part-footer .docs{border-top:0}.part-footer .docs .link{margin:0 0 12px;line-height:3.5em;background:#bbd61b;color:#fff}.part-services .title-sub{height:3em}}@media print,screen and (min-width:961px){.title{padding-bottom:48px}.container{width:936px}#menu .link{padding:12px}.part-partners .title{margin-bottom:72px}}
+#menu .link,.block {
+	backface-visibility:hidden
+}
+#menu .item:after,#menu .link:after {
+	position:absolute;display:block;content:" "
+}
+@font-face {
+	font-family:"Proxima Nova";font-weight:400;font-style:normal;src:url(/assets/fonts/proximanova-regular.eot);src:url(/assets/fonts/proximanova-regular.eot?#iefix) format('embedded-opentype'),url(/assets/fonts/proximanova-regular.woff2) format('woff2'),url(/assets/fonts/proximanova-regular.woff) format('woff'),url(/assets/fonts/proximanova-regular.ttf) format('truetype'),url(/assets/fonts/proximanova-regular.svg#proxima_nova_regular) format('svg')
+}
+@font-face {
+	font-family:"Proxima Nova";font-weight:300;font-style:normal;src:url(/assets/fonts/proximanova-light.eot);src:url(/assets/fonts/proximanova-light.eot?#iefix) format('embedded-opentype'),url(/assets/fonts/proximanova-light.woff2) format('woff2'),url(/assets/fonts/proximanova-light.woff) format('woff'),url(/assets/fonts/proximanova-light.ttf) format('truetype'),url(/assets/fonts/proximanova-light.svg#proxima_nova_light) format('svg')
+}
+@font-face {
+	font-family:"Proxima Nova";font-weight:500;font-style:normal;src:url(/assets/fonts/proximanova-semibold.eot);src:url(/assets/fonts/proximanova-semibold.eot?#iefix) format('embedded-opentype'),url(/assets/fonts/proximanova-semibold.woff2) format('woff2'),url(/assets/fonts/proximanova-semibold.woff) format('woff'),url(/assets/fonts/proximanova-semibold.ttf) format('truetype'),url(/assets/fonts/proximanova-semibold.svg#proxima_nova_semibold) format('svg')
+}
+
+@font-face {
+	font-family:"Proxima Nova";
+	font-weight:900;
+	font-style:normal;
+	src:url(/assets/fonts/proximanova-black.otf) format('opentype');
+}
+
+body {
+	font-family:"Proxima Nova";
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+.block {
+	transform:translateZ(0)
+}
+#menu .item:after {
+	left:50%;bottom:130px;height:20px;width:1px;background:#D6D2AC;transform:skewX(-30deg)
+}
+#menu .link {
+	transform:translateZ(0);transition:opacity .2s ease-out;
+	transition:.2s ease-out;
+}
+#menu .link:after {
+	left:0;bottom:0;right:0;height:2px;background:#000;transform:rotateY(90deg);transition:.2s ease-out;opacity:.08
+}
+.part-about:target~.header .link-about,.part-footer:target~.header .link-footer,.part-partners:target~.header .link-partners,.part-portfolio:target~.header .link-portfolio,.part-services:target~.header .link-services {
+	opacity:1
+}
+.part-about:target~.header .link-about:after,.part-footer:target~.header .link-footer:after,.part-partners:target~.header .link-partners:after,.part-portfolio:target~.header .link-portfolio:after,.part-services:target~.header .link-services:after {
+	background:#68C7A9;opacity:1
+}
+#menu .link:hover:after,.part-about:target~.header .link-about:after,.part-footer:target~.header .link-footer:after,.part-partners:target~.header .link-partners:after,.part-portfolio:target~.header .link-portfolio:after,.part-services:target~.header .link-services:after {
+	transform:rotateY(0)
+}
+.part-footer .docs .link {
+	/*opacity:.6;*/
+	transition:opacity .2s ease-out
+}
+.part-footer .docs .link:focus,.part-footer .docs .link:hover {
+	/*opacity:.8*/
+}
+.part-footer .docs .link:active {
+	opacity:1
+}
+.part-illumination {
+	background-image:url(/assets/img/soron-biztositas-kockazatelemzes.jpg);
+	background-position: center;
+	background-size: 200%;
+}
+
+
+@media print,screen and (max-width:210px) {
+	.header{
+		display: none;
+	}
+}
+
+@media print,screen and (max-width:480px) {
+
+
+	.person-image {
+		width: 85%;
+		border-radius: 50%;
+	}
+
+	.person-holder {
+		width: 100%;
+		text-align: center;
+		float:left;
+		padding:50px 0;
+	}
+
+	#headline-title-3 {
+		padding: 0 20px;
+		margin-top: 30px;
+		font-size: 15px;
+		font-family: 'Proxima Nova';
+		font-weight: 500;
+		line-height: 180%;
+	}
+
+	.line {
+		display: none;
+	}
+	section.part-headline#home {
+		background: #abe647;
+	}
+	#home-text {
+		width: 100%;
+		text-align: left;
+	}
+	.basic-name {
+		width:100%;
+	}
+	#headline-title-1 {
+		text-align: center;
+		line-height: 150%;
+	}
+	#headline-2-3-container {
+		width: 100%;
+		text-align: center;
+	}
+	.md-3 {
+		width:25%;
+	}
+	.first-row-list {
+		margin-top: 40px;
+	}
+	.points.inline-block{
+		display: none;
+	}
+	.about-us-content {
+		line-height: 165%;
+		padding-left: 0px;
+	}
+	#why-soron-title {
+		font-size: 20px;
+	}
+	#company-data .data {
+		width: 100%;
+	}
+	#tax-data .data {
+		width: 100%;
+	}
+}
+
+@media print,screen and (min-width:481px) {
+
+
+	.person-image {
+		border-radius: 50%;
+	}
+
+	.person-holder {
+		width: 50%;
+		text-align: center;
+		float:left;
+		padding:50px 0;
+	}
+
+	#headline-title-3 {
+		margin-top: 30px;
+		font-size: 20px;
+		font-family: 'Proxima Nova';
+		font-weight: 500;
+		line-height: 180%;
+	}
+
+	.sm-6 {
+		width:50%
+	}
+	.container {
+		width:456px
+	}
+	.part-footer .bank {
+		padding-bottom:6px
+	}
+	.part-services .title-sub {
+		height:5em
+	}
+	.part-partners .list {
+		text-align:left
+	}
+	.part-partners .item {
+		padding:0 12px;vertical-align:top
+	}
+	.line {
+		display: none;
+	}
+	section.part-headline#home {
+		background: #abe647;
+	}
+	#home-text {
+		width: 100%;
+		text-align: left;
+	}
+	.basic-name {
+		width:100%;
+	}
+	#headline-title-1 {
+		text-align: center;
+		line-height: 150%;
+	}
+	#headline-2-3-container {
+		width: 100%;
+		text-align: center;
+	}
+	.md-3 {
+		width:25%;
+	}
+	.first-row-list {
+		margin-top: 40px;
+	}
+	.services-title {
+		font-size: 45px;
+	}
+}
+@media print,screen and (min-width:769px) {
+	.md-3 {
+		width:25%;
+	}
+	.md-4 {
+		width:33.333%
+	}
+	.md-12 {
+		width:100%
+	}
+	.container {
+		width:744px;padding-left:48px;padding-right:48px
+	}
+	#logo {
+		float:left
+	}
+	#logo .type {
+		display:none
+	}
+	#menu {
+		display:block;
+		float:left;
+		height:100%;
+		margin-left: 200px;
+
+	}
+	#menu .item {
+		position:relative;height:100%
+	}
+	#menu .item:before {
+		display:inline-block;content:" ";font:0/0 a;width:0;height:100%;vertical-align:middle;overflow:hidden
+	}
+	#menu .item+.item {
+		margin-left:6px
+	}
+	#menu .link {
+		position:relative;padding:12px 6px;
+	}
+	#menu .link:hover {
+		/*opacity:.7*/
+	}
+	.part-footer .account .col {
+		vertical-align:top
+	}
+	.part-footer .docs {
+		border-top:0
+	}
+	.part-footer .docs .link {
+		margin:0 0 12px;
+		margin-left: 30px;
+		line-height:3.5em;
+		background:transparent;
+		color:#0090FF;
+		border-bottom: 2px solid #0090FF;
+		font-size: 12px;
+		width: 55%;
+	}
+	.part-services .title-sub {
+		height:3em
+	}
+	#sub-home {
+		background: url("/assets/img/soron-magyarorszag-alkusz.jpg") top center no-repeat;
+	}
+	section.part-headline#home {
+		background: -webkit-linear-gradient(left, #abe647 50%, #bcc6d2 50%);
+		background: -o-linear-gradient(left, #abe647 50%, #bcc6d2 50%);
+		background: -moz-linear-gradient(left, #abe647 50%, #bcc6d2 50%);
+		background: linear-gradient(left, #abe647 50%, #bcc6d2 50%);
+	}
+	.left-points {
+		margin-left: 178px;
+	}
+	#home-text {
+		width: 1000px;
+		text-align: left;
+	}
+	.basic-name {
+		width:15%;
+	}
+	#headline-title-1 {
+		text-align: left;
+		line-height: normal;
+		margin-left: 50px;
+	}
+	#headline-2-3-container {
+		text-align: left;
+	}
+	.first-row-list {
+		margin-top: 0;
+	}
+	.basic-name {
+		width:13%;
+		white-space: nowrap;
+	}
+}
+@media print,screen and (min-width:961px) {
+	.title {
+		padding-bottom:48px
+	}
+	.container {
+		width:1160px
+	}
+	#menu .link {
+		padding:9px;
+		letter-spacing: 0.5px;
+	}
+	.part-partners .title {
+		margin-bottom:72px
+	}
+	.line {
+		display: block;
+	}
+	#sub-home {
+		background: url("/assets/img/soron-magyarorszag-alkusz.jpg") top center no-repeat;
+	}
+	section.part-headline#home {
+		/*szürke: #bcc6d2*/
+		/*background: #bcc6d2;*/
+		background: -webkit-linear-gradient(left, #abe647 50%, #bcc6d2 50%);
+		background: -o-linear-gradient(left, #abe647 50%, #bcc6d2 50%);
+		background: -moz-linear-gradient(left, #abe647 50%, #bcc6d2 50%);
+		background: linear-gradient(left, #abe647 50%, #bcc6d2 50%);
+	}
+}
+
+section.part-headline#home {
+	/*szürke: #bcc6d2*/
+	/*background: #bcc6d2;*/
+	position: relative;
+	max-height: 698px;
+	height: 698px;
+}
+
+#sub-home {
+	position: absolute;
+	width: 100%;
+	height: 700px;
+	font-family: arial;
+}
+
+#home-text {
+	display: inline-block;
+	padding: 100px 0;
+}
+
+.inline-block {
+	display: inline-block;
+}
+
+.right {
+	text-align: right;
+}
+
+.left {
+	text-align: left;
+}
+
+.center {
+	text-align: center;
+}
+
+.white {
+	color: white;
+}
+
+.capital div {
+	text-transform: uppercase;
+	font-size: 20px;
+}
+
+#headline-title-1 {
+	font-size: 23.45px;
+	margin-top: 77px;
+	font-family: 'Proxima Nova';
+	font-weight: 300;
+	color: #744c18;
+}
+
+#headline-title-2 {
+	margin-top: 37px;
+	letter-spacing: 0.5px;
+}
+
+.left-points {
+	width: 136px;
+	letter-spacing: 2px;
+}
+
+#headline-title-2 #the-title {
+	font-family: 'Proxima Nova';
+	font-weight: 900;
+	/*font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif;*/
+	width: 208px;
+
+}
+
+
+#headline-title-3 span#services-button-top{
+	background-color: rgba(255,255,255,0.5);
+	text-transform: none;
+}
+
+#headline-title-3 span#services-button-top a{
+	text-decoration: none;
+	font-weight: 500;
+	color: #0090FF;
+}
+
+.bold {
+	font-weight: 900;
+}
+
+#our-partners {
+	background: url('/assets/img/partner-bg.png');
+	padding-bottom: 50px;
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -68px;
+    visibility: hidden;
+}
+
+#blue-line {
+	width: 1px;
+	height: 815px;
+	position: absolute;
+	top: 2485px;
+	left: -100px;
+	border-left: 1px solid #34FFFC;
+
+	z-index: 2;
+
+    -ms-transform: rotate(-30deg);
+    -webkit-transform: rotate(-30deg);
+    transform: rotate(-30deg);
+}
+
+
+#blue-line-right {
+	width: 1px;
+	height: 815px;
+	position: absolute;
+	top: 2500px;
+	right: 142px;
+	border-left: 1px solid #34FFFC;
+
+	z-index: 2;
+
+    -ms-transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+}
+
+#green-line-right {
+	width: 1px;
+	height: 815px;
+	position: absolute;
+	top: 2550px;
+	right: 200px;
+	border-left: 1px solid #DBF353;
+
+	z-index: 2;
+
+    -ms-transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+}
+
+.header #yellow-line-right {
+	display: none;
+	width: 1px;
+	height: 1000px;
+	position: fixed;
+	top: -300px;
+	left: 1250px;
+	/*border-left: 1px solid #DBF353;*/
+	border-left: 1px solid #FDFF97;
+
+	z-index: 4;
+
+    -ms-transform: rotate(30deg); /* IE 9 */
+    -webkit-transform: rotate(30deg); /* Chrome, Safari, Opera */
+    transform: rotate(30deg);
+}
+
+.header #green-line-left {
+	display: none;
+	width: 1px;
+	height: 1000px;
+	position: fixed;
+	top: -25px;
+	right: 950px;
+	border-left: 1px solid #DBF353;
+
+	z-index: 4;
+
+    -ms-transform: rotate(-30deg); /* IE 9 */
+    -webkit-transform: rotate(-30deg); /* Chrome, Safari, Opera */
+    transform: rotate(-30deg);
+}
+
+.scroll-header #green-line-left {
+	top: -55px;
+	transition: .2s ease-out;
+}
+
+.scroll-header {
+	position:fixed;
+	left:0;
+	top:-40px;
+	right:0;
+	height:108px;
+	padding-top:54px;
+	background:#fff;
+	overflow:hidden;
+	transition:.2s ease-out;
+	z-index:3;
+}
+
+.relative {
+	position: relative;
+}
+
+.top-button-container {
+	margin-top: 20px;
+	width: 75%;
+}
+
+.title-font {
+	font-weight: 200;
+	font-size: 2em;
+}
+
+#header #menu .link {
+	font-size: 18px;
+	transition:.2s ease-out;
+}
+
+#header #logo .name {
+	font-size: 35px;
+	transition:.2s ease-out;
+}
+
+.logo-img {
+	float:left;
+	width: 150px;
+	margin-top: -5px;
+}
+
+.person-name {
+	color: #CDB4A9;
+	font-size: 25px;
+}
+
+.people {
+	line-height: 200%;
+	/*margin-top: 50px;*/
+}

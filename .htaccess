@@ -69,5 +69,5 @@ ServerSignature off
 	RewriteBase /
 	RewriteCond %{REQUEST_METHOD} ^TRACE
 	RewriteRule .* - [F]
-	RewriteRule !\.(js|json|css|ico|gif|jp?g|png|svg|xml|xsl|pdf|doc?|xls?|ppt?|woff[2]?|ttf|eot|map|less)$ index.php [L,NC]
+	RewriteRule !\.(otf|js|json|css|ico|gif|jp?g|png|svg|xml|xsl|pdf|doc?|xls?|ppt?|woff[2]?|ttf|eot|map|less)$ index.php [L,NC]
 </IfModule>
