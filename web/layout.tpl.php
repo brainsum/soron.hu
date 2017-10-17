@@ -214,7 +214,7 @@
         "link" => Http::getHost(),
         "meta" => array(
             "code-org" => '01-09-710091',
-            "code-tax" => '12921308-1-42'
+            "code-tax" => '12921308-1-43'
         ),
         "text" => array(
             "typo" => 'Biztosítás és kockázatelemzés',
@@ -503,9 +503,9 @@
 
                     <address class="content" property="address" typeof="PostalAddress">
                         <meta property="addressCountry" content="Hungary"/>
-                        <span property="postalCode">1142 </span>
+                        <span property="postalCode">1116 </span>
                         <span property="addressLocality">Budapest </span>
-                        <span property="streetAddress">Sárrét park 5/A.</span>
+                        <span property="streetAddress">Temesvár u. 20.</span>
                     </address>
 
                     <h4 class="title footer-h4">Irodánk címe</h4>
@@ -546,7 +546,7 @@
                 <div class="inline col xs-12 sm-6 md-4" id="tax-data">
                     <dl class="term clearfix">
                         <dt class="name">Adószám</dt>
-                        <dd class="data" property="taxID">12921308-1-42</dd>
+                        <dd class="data" property="taxID">12921308-1-43</dd>
                         <dt class="name">Cégjegyzékszám</dt>
                         <dd class="data" property="vatID">01-09-710091</dd>
                         <dt class="name">Felügyeleti engedély száma</dt>
