@@ -478,21 +478,25 @@
 
                 <!-- [LAYOUT.FOOTER] CONTACT -->
 
-                <div class="inline xs-12 md-4">
+                <div class="inline xs-12 md-4 contact">
                     <h4 class="inline col title xs-12 sm-6 md-12 footer-h4">Kapcsolat</h4>
 
                     <div class="inline col content xs-12 sm-6 md-12">
                         <strong class="company" property="legalName" id="company-name"><?=$org->getName(true)?></strong>
-                        <dl class="term clearfix">
-                            <dt class="name basic-name">Telefon</dt>
-                            <dd class="data basic-data" property="telephone">+36 (1) 615-2805</dd>
-                            <dt class="name basic-name">Fax</dt>
-                            <dd class="data basic-data" property="faxNumber">+36 (1) 615-2805</dd>
-                            <dt class="name basic-name">E-mail</dt>
-                            <dd class="data basic-data">
-                                <a class="link" href="mailto:info@soron.hu" property="email" content="info@soron.hu">info@soron.hu</a>
-                            </dd>
-                        </dl>
+                        <table cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td>Telefon:</td>
+                                <td>+36 (1) 615-2805</td>
+                            </tr>
+                            <tr>
+                                <td>Panaszkezelői vonal:</td>
+                                <td>+36 (1) 615-2810</td>
+                            </tr>
+                            <tr>
+                                <td>E-mail:</td>
+                                <td><a class="link" href="mailto:info@soron.hu" property="email" content="info@soron.hu">info@soron.hu</a></td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
 
